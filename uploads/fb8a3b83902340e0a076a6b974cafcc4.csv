@@ -1,0 +1,505 @@
+customer_id,order_id,customer_name,email,age,city,state,product,category,quantity,unit_price_inr,order_amount_inr,order_date,payment_method,order_status,rating
+C0001,O00001,Anaya Khanna,anaya.khanna95@example.com,75.0,Mumbai,Maharashtra,Laptop,Electronics,3,55149.71,152372.15,2025-05-23,Cash on Delivery,Cancelled,1.0
+C0002,O00002,Aarav Rao,aarav.rao26@example.com,63.0,Delhi,Delhi,Smartphone,Electronics,2,28251.81,51508.7,2026-09-09,Cash on Delivery,Cancelled,2.0
+C0003,O00003,Nisha Malhotra,nisha.malhotra36@example.com,27.0,Kolkata,West Bengal,Keyboard,Accessories,1,1769.25,1939.76,2025-06-13,Debit Card,Delivered,1.0
+C0004,O00004,Arjun Sharma,arjun.sharma94@example.com,47.0,Chennai,Tamil Nadu,Smartphone,Electronics,3,28060.86,92756.86,2026-09-11,Net Banking,Delivered,5.0
+C0005,O00005,Meera Khanna,meera.khanna30@example.com,67.0,Pune,Maharashtra,Mouse,Accessories,5,888.63,4084.59,2025-03-13,UPI,Shipped,1.0
+C0006,O00006,Isha Malhotra,,31.0,Chennai,Tamil Nadu,Keyboard,Accessories,4,1818.38,7493.08,2026-01-09,UPI,Returned,2.0
+C0007,O00007,Aditi Singh,aditi.singh88@example.com,38.0,Gurugram,Haryana,Monitor,Electronics,2,14288.0,27682.99,2025-10-04,UPI,Shipped,1.0
+C0008,O00008,Kunal Singh,kunal.singh84@example.com,49.0,Jaipur,Rajasthan,Tablet,Electronics,3,21862.23,57410.53,2026-08-04,Net Banking,Shipped,3.0
+C0009,O00009,Nisha Das,nisha.das52@example.com,41.0,Bengaluru,Karnataka,Monitor,Electronics,5,13764.23,70818.52,2026-08-22,Credit Card,Returned,4.0
+C0010,O00010,Nisha Das,nisha.das9@example.com,42.0,Mumbai,Maharashtra,Laptop,Electronics,1,54609.34,49271.88,2025-06-13,Net Banking,Returned,3.0
+C0011,O00011,Arjun Khanna,arjun.khanna44@example.com,25.0,Gurugram,Haryana,Laptop,Electronics,1,54318.55,57998.22,2026-07-04,Credit Card,Cancelled,1.0
+C0012,O00012,Diya Khanna,diya.khanna65@example.com,,Pune,Maharashtra,Headphones,Accessories,5,2454.84,14047.35,2026-10-03,Debit Card,Shipped,5.0
+C0013,O00013,Anaya Malhotra,anaya.malhotra40@example.com,33.0,Gurugram,Haryana,Laptop,Electronics,5,53541.15,260492.87,2025-01-20,Cash on Delivery,Delivered,1.0
+C0014,O00014,Priya Rao,priya.rao22@example.com,34.0,Kolkata,West Bengal,Smartphone,Electronics,5,28046.49,151165.05,2025-05-12,Cash on Delivery,Cancelled,2.0
+C0015,O00015,Aditya Rao,aditya.rao58@example.com,25.0,Gurugram,Haryana,Monitor,Electronics,3,13788.24,40727.3,2026-01-18,UPI,Processing,1.0
+C0016,O00016,Meera Singh,meera.singh9@example.com,75.0,Noida,Uttar Pradesh,Monitor,Electronics,5,13606.39,64124.57,2025-03-14,Debit Card,Delivered,5.0
+C0017,O00017,Rahul Das,rahul.das61@example.com,33.0,Hyderabad,Telangana,Keyboard,Accessories,4,1830.74,6582.75,2025-05-16,Net Banking,Shipped,1.0
+C0018,O00018,Meera Khanna,meera.khanna84@example.com,59.0,,Maharashtra,Tablet,Electronics,3,21469.91,64486.86,2026-04-24,Net Banking,Processing,1.0
+C0019,O00019,Nisha Gupta,nisha.gupta36@example.com,47.0,Hyderabad,Telangana,Monitor,Electronics,2,13789.84,28304.8,2025-05-24,UPI,Cancelled,5.0
+C0020,O00020,Sana Gupta,,49.0,Mumbai,Maharashtra,Laptop,Electronics,5,54938.48,302722.28,2025-04-06,Net Banking,Delivered,2.0
+C0021,O00021,Diya Jain,diya.jain90@example.com,64.0,Chennai,Tamil Nadu,Laptop,Electronics,4,56634.89,204503.4,2026-04-11,Cash on Delivery,Cancelled,2.0
+C0022,O00022,Aditi Sharma,aditi.sharma96@example.com,38.0,Hyderabad,Telangana,Keyboard,Accessories,2,1752.17,4106.21,2026-08-17,Cash on Delivery,Cancelled,
+C0023,O00023,Isha Verma,isha.verma77@example.com,22.0,Gurugram,Haryana,Headphones,Accessories,1,2526.28,2845.58,2025-03-24,Credit Card,Cancelled,1.0
+C0024,O00024,Kabir Jain,kabir.jain85@example.com,55.0,Noida,Uttar Pradesh,Monitor,Electronics,5,14054.79,71984.9,2026-09-27,Debit Card,Processing,2.0
+C0025,O00025,Aditya Malhotra,aditya.malhotra97@example.com,22.0,Jaipur,Rajasthan,Monitor,Electronics,3,13587.82,40686.9,2025-11-04,Cash on Delivery,Returned,1.0
+C0026,O00026,Kabir Singh,kabir.singh48@example.com,36.0,Mumbai,Maharashtra,Monitor,Electronics,5,13712.51,65069.21,2025-12-24,Cash on Delivery,Processing,5.0
+C0027,O00027,Rohan Kapoor,rohan.kapoor15@example.com,74.0,Gurugram,Haryana,Laptop,Electronics,5,53703.22,258448.75,2025-04-17,Cash on Delivery,Shipped,3.0
+C0028,O00028,Arjun Rao,arjun.rao63@example.com,34.0,Pune,Maharashtra,Monitor,Electronics,3,14340.48,38265.33,2026-10-12,UPI,Delivered,4.0
+C0029,O00029,Arjun Gupta,arjun.gupta95@example.com,46.0,Pune,Maharashtra,Laptop,Electronics,1,55170.55,52253.68,2025-05-14,Net Banking,Returned,1.0
+C0030,O00030,Rahul Rao,rahul.rao19@example.com,45.0,Mumbai,Maharashtra,Smartphone,Electronics,2,27374.11,56765.92,2026-01-14,Debit Card,Processing,1.0
+C0031,O00031,Aditi Jain,aditi.jain80@example.com,65.0,Jaipur,Rajasthan,Monitor,Electronics,2,13709.82,29402.24,2025-12-29,Credit Card,Shipped,2.0
+C0032,O00032,Nisha Khanna,nisha.khanna95@example.com,69.0,Chennai,Tamil Nadu,Laptop,Electronics,2,54168.95,117806.63,2025-12-07,Credit Card,Delivered,4.0
+C0033,O00033,Tara Kapoor,tara.kapoor30@example.com,32.0,Delhi,Delhi,Smartwatch,Wearables,2,6799.94,12738.21,2026-04-17,Credit Card,Cancelled,3.0
+C0034,O00034,Reyansh Khanna,reyansh.khanna69@example.com,39.0,Pune,Maharashtra,Smartphone,Electronics,3,28737.92,80248.88,2026-06-06,UPI,Processing,2.0
+C0035,O00035,Tara Bansal,tara.bansal41@example.com,45.0,Noida,Uttar Pradesh,Keyboard,Accessories,1,1811.47,1588.54,2026-03-21,Cash on Delivery,Delivered,4.0
+C0036,O00036,Aarav Rao,not-an-email,61.0,Noida,Uttar Pradesh,Monitor,Electronics,3,14184.32,36259.27,2026-03-23,Credit Card,Processing,4.0
+C0037,O00037,Diya Rao,diya.rao40@example.com,60.0,Mumbai,Maharashtra,Mouse,Accessories,5,895.05,4248.79,2025-05-08,Net Banking,Processing,5.0
+C0038,O00038,Isha Das,isha.das73@example.com,,Bengaluru,Karnataka,Monitor,Electronics,4,13921.1,58770.81,2026-01-24,UPI,Processing,3.0
+C0039,O00039,Aditya Mehta,aditya.mehta57@example.com,61.0,Hyderabad,Telangana,Tablet,Electronics,5,21622.09,113519.83,2025-11-26,Net Banking,Shipped,1.0
+C0040,O00040,Diya Singh,diya.singh26@example.com,27.0,Pune,Maharashtra,Mouse,Accessories,1,874.32,985.97,2025-08-29,Credit Card,Cancelled,5.0
+C0041,O00041,Vivaan Bansal,vivaan.bansal90@example.com,42.0,Mumbai,Maharashtra,Smartwatch,Wearables,4,6997.64,31243.55,2026-08-13,Credit Card,Shipped,1.0
+C0042,O00042,Aditya Sharma,aditya.sharma72@example.com,33.0,Mumbai,Maharashtra,Tablet,Electronics,2,22551.06,39721.7,2026-06-15,UPI,Cancelled,2.0
+C0043,O00043,Nisha Rao,nisha.rao58@example.com,75.0,Kolkata,West Bengal,Mouse,Accessories,4,,3721.66,2026-06-01,Net Banking,Cancelled,3.0
+C0044,O00044,Arjun Mehta,arjun.mehta10@example.com,63.0,Hyderabad,Telangana,Keyboard,Accessories,5,1776.86,8958.41,2025-09-02,Debit Card,Processing,3.0
+C0045,O00045,Rohan Bansal,rohan.bansal28@example.com,22.0,Gurugram,Haryana,Smartphone,Electronics,2,27856.98,50133.96,2026-01-28,Debit Card,Returned,4.0
+C0046,O00046,Rahul Bansal,rahul.bansal3@example.com,72.0,Chennai,Tamil Nadu,Laptop,Electronics,2,56256.17,120985.41,2026-02-03,Cash on Delivery,Cancelled,4.0
+C0047,O00047,Aditi Bansal,,52.0,Delhi,Delhi,Mouse,Accessories,3,916.19,2905.31,2026-03-06,Credit Card,Cancelled,2.0
+C0048,O00048,Reyansh Bansal,reyansh.bansal22@example.com,71.0,Pune,Maharashtra,Tablet,Electronics,4,21956.95,75566.26,2025-12-11,Credit Card,Returned,5.0
+C0049,O00049,Kabir Khanna,kabir.khanna55@example.com,26.0,Delhi,Delhi,Tablet,Electronics,5,22484.24,112124.94,2025-01-28,Credit Card,Delivered,3.0
+C0050,O00050,Reyansh Kapoor,reyansh.kapoor97@example.com,71.0,Chennai,Tamil Nadu,Mouse,Accessories,2,895.76,1775.54,2025-12-12,UPI,Cancelled,1.0
+C0051,O00051,Meera Sharma,meera.sharma32@example.com,30.0,Gurugram,Haryana,Laptop,Electronics,3,56119.46,151349.0,2025-03-12,Cash on Delivery,Shipped,2.0
+C0052,O00052,Aditya Bansal,aditya.bansal33@example.com,67.0,Bengaluru,Karnataka,Smartwatch,Wearables,1,6944.94,7134.34,2025-08-12,Cash on Delivery,Returned,1.0
+C0053,O00053,Rahul Khanna,rahul.khanna49@example.com,43.0,Bengaluru,Karnataka,Keyboard,Accessories,1,1847.68,1842.49,2025-11-16,Credit Card,Delivered,5.0
+C0054,O00054,Anaya Das,anaya.das6@example.com,40.0,Hyderabad,Telangana,Smartphone,Electronics,3,28055.01,92827.39,2026-09-07,Debit Card,Delivered,5.0
+C0055,O00055,Nisha Malhotra,nisha.malhotra82@example.com,75.0,Jaipur,Rajasthan,Laptop,Electronics,4,56084.73,241273.84,2025-04-19,Credit Card,Cancelled,2.0
+C0056,O00056,Priya Mehta,priya.mehta56@example.com,70.0,Gurugram,Haryana,Keyboard,Accessories,5,1824.95,9832.14,2026-07-06,Debit Card,Processing,2.0
+C0057,O00057,Rahul Das,rahul.das86@example.com,42.0,Mumbai,Maharashtra,Keyboard,Accessories,4,1782.33,6646.75,2026-04-21,Net Banking,Processing,2.0
+C0058,O00058,Arjun Das,arjun.das90@example.com,74.0,Kolkata,West Bengal,Monitor,Electronics,3,13812.07,45752.69,2025-12-15,UPI,Returned,2.0
+C0059,O00059,Priya Khanna,priya.khanna92@example.com,49.0,Mumbai,Maharashtra,Monitor,Electronics,4,13956.47,55808.11,2025-09-04,UPI,Delivered,3.0
+C0060,O00060,Tara Mehta,tara.mehta71@example.com,51.0,Hyderabad,Telangana,Tablet,Electronics,2,21793.76,41441.92,2026-08-19,Cash on Delivery,Processing,3.0
+C0061,O00061,Vivaan Malhotra,vivaan.malhotra16@example.com,65.0,Kolkata,West Bengal,Keyboard,Accessories,3,1803.87,4997.27,2025-05-04,Credit Card,Shipped,2.0
+C0062,O00062,Maya Kapoor,maya.kapoor13@example.com,71.0,Kolkata,West Bengal,Keyboard,Accessories,5,1766.96,10286.84,2026-06-22,Credit Card,Processing,2.0
+C0063,O00063,Meera Rao,meera.rao38@example.com,62.0,Pune,Maharashtra,Laptop,Electronics,5,56465.5,244193.09,2025-02-16,Net Banking,Delivered,1.0
+C0064,O00064,Isha Sharma,isha.sharma33@example.com,73.0,,Uttar Pradesh,Keyboard,Accessories,4,1797.59,7154.02,2025-12-15,UPI,Cancelled,4.0
+C0065,O00065,Diya Verma,diya.verma32@example.com,25.0,Mumbai,Maharashtra,Laptop,Electronics,2,55191.64,98423.52,2026-07-31,Net Banking,Returned,5.0
+C0066,O00066,Diya Das,diya.das55@example.com,37.0,Noida,Uttar Pradesh,Monitor,Electronics,5,14057.65,67487.94,2026-03-30,UPI,Returned,1.0
+C0067,O00067,Sana Gupta,sana.gupta71@example.com,22.0,Hyderabad,Telangana,Monitor,Electronics,3,13711.49,44021.39,2025-06-10,Net Banking,Cancelled,5.0
+C0068,O00068,Aditya Verma,aditya.verma88@example.com,32.0,Kolkata,West Bengal,Keyboard,Accessories,1,1845.78,1655.0,2025-10-17,Cash on Delivery,Shipped,4.0
+C0069,O00069,Kabir Sharma,kabir.sharma22@example.com,68.0,Mumbai,Maharashtra,Monitor,Electronics,2,13838.39,31430.66,2025-05-26,Cash on Delivery,Processing,4.0
+C0070,O00070,Ishaan Rao,ishaan.rao64@example.com,46.0,Mumbai,Maharashtra,Smartwatch,Wearables,3,6823.79,22258.32,2025-10-06,UPI,Cancelled,3.0
+C0071,O00071,Rahul Sharma,rahul.sharma98@example.com,150.0,Noida,Uttar Pradesh,Keyboard,Accessories,1,1834.71,1579.32,2026-08-13,Cash on Delivery,Delivered,2.0
+C0072,O00072,Nisha Khanna,nisha.khanna63@example.com,23.0,Kolkata,West Bengal,Smartwatch,Wearables,3,6987.4,18993.38,2026-08-23,Net Banking,Processing,3.0
+C0073,O00073,Diya Khanna,diya.khanna52@example.com,70.0,Mumbai,Maharashtra,Headphones,Accessories,3,2539.07,7301.2,2026-05-23,UPI,Cancelled,1.0
+C0074,O00074,Ishaan Sharma,ishaan.sharma85@example.com,73.0,Jaipur,Rajasthan,Keyboard,Accessories,3,1804.6,4777.79,2026-02-18,Net Banking,Delivered,2.0
+C0075,O00075,Aditya Sharma,aditya.sharma27@example.com,35.0,Gurugram,Haryana,Mouse,Accessories,5,902.66,4846.2,2026-10-03,Debit Card,Cancelled,4.0
+C0076,O00076,Diya Rao,diya.rao2@example.com,53.0,Mumbai,Maharashtra,Laptop,Electronics,5,54696.37,299693.38,2025-06-12,Credit Card,Delivered,4.0
+C0077,O00077,Ishaan Bansal,ishaan.bansal35@example.com,44.0,Mumbai,Maharashtra,Headphones,Accessories,4,2550.21,11297.96,2025-10-26,Net Banking,Shipped,4.0
+C0078,O00078,Ishaan Bansal,ishaan.bansal18@example.com,73.0,Gurugram,Haryana,Headphones,Accessories,4,2435.47,9071.83,2026-09-06,Net Banking,Processing,5.0
+C0079,O00079,Rahul Khanna,rahul.khanna63@example.com,73.0,Pune,Maharashtra,Laptop,Electronics,3,53840.36,176189.52,2026-08-25,Cash on Delivery,Cancelled,3.0
+C0080,O00080,Sana Das,sana.das50@example.com,,Jaipur,Rajasthan,Tablet,Electronics,4,22469.94,99427.3,2025-07-13,Net Banking,Delivered,3.0
+C0081,O00081,Priya Sharma,priya.sharma17@example.com,50.0,Kolkata,West Bengal,Tablet,Electronics,4,22614.27,100894.13,2025-06-05,Debit Card,Delivered,4.0
+C0082,O00082,Rohan Verma,rohan.verma61@example.com,68.0,Mumbai,Maharashtra,Smartwatch,Wearables,1,7197.07,7467.13,2026-02-24,Debit Card,Returned,4.0
+C0083,O00083,Priya Rao,priya.rao5@example.com,57.0,Mumbai,Maharashtra,Mouse,Accessories,5,876.69,4338.01,2025-11-21,Debit Card,Shipped,1.0
+C0084,O00084,Aarav Sharma,aarav.sharma42@example.com,68.0,Chennai,Tamil Nadu,Smartphone,Electronics,1,27254.28,27526.9,2025-11-03,Debit Card,Processing,4.0
+C0085,O00085,Isha Gupta,isha.gupta11@example.com,57.0,Bengaluru,Karnataka,Monitor,Electronics,5,14311.51,68153.09,2025-07-04,Cash on Delivery,Shipped,4.0
+C0086,O00086,Aditya Kapoor,aditya.kapoor86@example.com,18.0,Noida,Uttar Pradesh,Headphones,Accessories,2,2559.84,4941.72,2025-09-18,Net Banking,Processing,5.0
+C0087,O00087,Diya Khanna,diya.khanna55@example.com,62.0,Bengaluru,Karnataka,Smartphone,Electronics,4,27580.17,126959.92,2026-08-25,Debit Card,Shipped,4.0
+C0088,O00088,Rahul Kapoor,rahul.kapoor90@example.com,36.0,Kolkata,West Bengal,Smartphone,Electronics,2,27196.86,54006.92,2026-01-03,Net Banking,Processing,1.0
+C0089,O00089,Sana Das,,32.0,Noida,Uttar Pradesh,Laptop,Electronics,5,55450.84,295226.7,2025-10-21,Cash on Delivery,Processing,2.0
+C0090,O00090,Rahul Malhotra,rahul.malhotra94@example.com,26.0,Mumbai,Maharashtra,Laptop,Electronics,3,53647.44,179286.22,2025-02-04,Debit Card,Processing,4.0
+C0091,O00091,Ishaan Rao,ishaan.rao35@example.com,71.0,Bengaluru,Karnataka,Monitor,Electronics,2,13718.22,30406.71,2026-01-10,Net Banking,Processing,3.0
+C0092,O00092,Reyansh Rao,reyansh.rao47@example.com,23.0,Mumbai,Maharashtra,Smartwatch,Wearables,1,7122.09,6245.59,2025-08-20,UPI,Processing,
+C0093,O00093,Rahul Jain,rahul.jain82@example.com,41.0,Mumbai,Maharashtra,Smartwatch,Wearables,3,6835.51,22088.82,2025-09-26,Credit Card,Cancelled,1.0
+C0094,O00094,Aditya Bansal,aditya.bansal39@example.com,59.0,Noida,Uttar Pradesh,Mouse,Accessories,5,895.05,4123.85,2025-03-06,Credit Card,Delivered,1.0
+C0095,O00095,Rohan Jain,rohan.jain59@example.com,41.0,Pune,Maharashtra,Smartwatch,Wearables,1,7071.6,6154.1,2026-07-05,Cash on Delivery,Cancelled,5.0
+C0096,O00096,Nisha Kapoor,nisha.kapoor5@example.com,62.0,Bengaluru,Karnataka,Tablet,Electronics,1,21829.1,24202.37,2026-09-23,Net Banking,Cancelled,2.0
+C0097,O00097,Meera Jain,meera.jain36@example.com,30.0,Jaipur,Rajasthan,Smartphone,Electronics,3,28786.59,85120.54,2026-01-03,Net Banking,Delivered,2.0
+C0098,O00098,Rohan Das,rohan.das27@example.com,22.0,Noida,Uttar Pradesh,Laptop,Electronics,1,56088.4,59732.11,2025-09-07,Cash on Delivery,Shipped,5.0
+C0099,O00099,Aarav Kapoor,aarav.kapoor19@example.com,26.0,Hyderabad,Telangana,Monitor,Electronics,3,14033.78,45457.04,2026-09-03,Credit Card,Delivered,1.0
+C0100,O00100,Rahul Malhotra,rahul.malhotra3@example.com,29.0,Bengaluru,Karnataka,Laptop,Electronics,3,54225.71,179354.24,2025-09-01,Credit Card,Cancelled,5.0
+C0101,O00101,Ishaan Das,ishaan.das14@example.com,46.0,Mumbai,Maharashtra,Smartphone,Electronics,4,28006.45,110262.05,2026-01-06,Cash on Delivery,Delivered,5.0
+C0102,O00102,Reyansh Jain,reyansh.jain88@example.com,24.0,Pune,Maharashtra,Smartwatch,Wearables,1,6995.91,6077.73,2026-05-06,Net Banking,Delivered,1.0
+C0103,O00103,Rahul Rao,rahul.rao92@example.com,38.0,Jaipur,Rajasthan,Headphones,Accessories,1,2482.14,2219.64,2026-10-02,Cash on Delivery,Returned,3.0
+C0104,O00104,Aditi Bansal,aditi.bansal28@example.com,45.0,Kolkata,West Bengal,Tablet,Electronics,1,21936.05,23934.43,2025-04-28,Credit Card,Cancelled,3.0
+C0105,O00105,Nisha Malhotra,nisha.malhotra86@example.com,-4.0,Kolkata,West Bengal,Tablet,Electronics,4,21834.08,94061.77,2025-11-17,Credit Card,Cancelled,1.0
+C0106,O00106,Rohan Rao,rohan.rao8@example.com,55.0,Mumbai,Maharashtra,Smartphone,Electronics,1,28767.13,27427.76,2026-01-17,Cash on Delivery,Processing,1.0
+C0107,O00107,Diya Das,diya.das40@example.com,40.0,Chennai,Tamil Nadu,Mouse,Accessories,4,878.59,3997.54,2025-02-22,Cash on Delivery,Shipped,2.0
+C0108,O00108,Tara Verma,tara.verma98@example.com,35.0,Kolkata,West Bengal,Monitor,Electronics,1,14062.24,13370.48,2026-07-24,Net Banking,Returned,5.0
+C0109,O00109,Aarav Gupta,aarav.gupta35@example.com,62.0,Noida,Uttar Pradesh,Laptop,Electronics,5,55865.95,310399.45,2025-10-01,Debit Card,Processing,1.0
+C0110,O00110,Rohan Bansal,rohan.bansal82@example.com,19.0,Bengaluru,Karnataka,Headphones,Accessories,5,2438.76,13090.04,2025-03-13,Cash on Delivery,Shipped,4.0
+C0111,O00111,Kunal Das,kunal.das77@example.com,23.0,Chennai,Tamil Nadu,Smartwatch,Wearables,3,7161.0,18841.68,2025-11-16,Credit Card,Shipped,5.0
+C0112,O00112,Priya Das,priya.das57@example.com,44.0,Delhi,Delhi,Smartphone,Electronics,3,27618.92,82566.45,2026-03-11,Cash on Delivery,Delivered,3.0
+C0113,O00113,Priya Rao,priya.rao86@example.com,37.0,Chennai,Tamil Nadu,Smartphone,Electronics,3,27236.3,88491.09,2026-08-31,Net Banking,Returned,1.0
+C0114,O00114,Arjun Kapoor,arjun.kapoor42@example.com,25.0,Delhi,Delhi,Monitor,Electronics,3,13586.49,47611.08,2025-05-21,Net Banking,Shipped,2.0
+C0115,O00115,Kabir Jain,kabir.jain95@example.com,20.0,Chennai,Tamil Nadu,Monitor,Electronics,5,13946.42,71233.19,2025-12-29,Net Banking,Delivered,3.0
+C0116,O00116,Diya Verma,diya.verma52@example.com,19.0,Noida,Uttar Pradesh,Tablet,Electronics,5,22615.38,106845.96,2026-03-04,Credit Card,Returned,4.0
+C0117,O00117,Nisha Das,nisha.das52@example.com,51.0,Jaipur,Rajasthan,Smartphone,Electronics,4,27292.13,123574.67,2025-09-07,Debit Card,Processing,2.0
+C0118,O00118,Ishaan Rao,ishaan.rao25@example.com,75.0,Jaipur,Rajasthan,Headphones,Accessories,1,2541.43,2507.86,2025-04-27,Debit Card,Shipped,2.0
+C0119,O00119,Rohan Khanna,rohan.khanna10@example.com,29.0,,Maharashtra,Headphones,Accessories,3,2567.69,6818.86,2026-09-09,Net Banking,Cancelled,5.0
+C0120,O00120,Kunal Khanna,kunal.khanna41@example.com,27.0,Noida,Uttar Pradesh,Smartwatch,Wearables,5,6974.7,36501.41,2026-10-02,Net Banking,Cancelled,3.0
+C0121,O00121,Aditya Mehta,aditya.mehta5@example.com,21.0,Pune,Maharashtra,Laptop,Electronics,3,54566.83,165363.18,2025-11-14,Debit Card,Delivered,1.0
+C0122,O00122,Aditya Das,aditya.das84@example.com,,Noida,Uttar Pradesh,Tablet,Electronics,4,21764.42,90120.7,2025-02-12,Net Banking,Returned,2.0
+C0123,O00123,Kabir Rao,kabir.rao83@example.com,29.0,Delhi,Delhi,Smartwatch,Wearables,1,6806.44,7653.03,2025-12-18,Net Banking,Cancelled,5.0
+C0124,O00124,Reyansh Jain,reyansh.jain44@example.com,61.0,Gurugram,Haryana,Headphones,Accessories,3,2514.68,7213.92,2025-10-17,Debit Card,Delivered,3.0
+C0125,O00125,Rohan Malhotra,rohan.malhotra11@example.com,55.0,Mumbai,Maharashtra,Tablet,Electronics,3,22215.97,61089.52,2026-09-10,Debit Card,Processing,4.0
+C0126,O00126,Rohan Khanna,rohan.khanna90@example.com,71.0,Bengaluru,Karnataka,Smartphone,Electronics,3,28751.14,85484.84,2025-12-03,Cash on Delivery,Delivered,4.0
+C0127,O00127,Vivaan Malhotra,vivaan.malhotra99@example.com,49.0,Gurugram,Haryana,Mouse,Accessories,1,883.37,862.9,2025-07-04,Credit Card,Shipped,1.0
+C0128,O00128,Meera Khanna,meera.khanna44@example.com,74.0,Pune,Maharashtra,Smartphone,Electronics,5,28447.4,151376.74,2026-06-24,Credit Card,Returned,4.0
+C0129,O00129,Isha Bansal,isha.bansal57@example.com,20.0,Bengaluru,Karnataka,Headphones,Accessories,2,2486.63,5497.02,2026-10-02,Credit Card,Cancelled,5.0
+C0130,O00130,Priya Singh,priya.singh48@example.com,61.0,Pune,Maharashtra,Smartwatch,Wearables,2,7187.79,14142.85,2025-11-13,Net Banking,Cancelled,3.0
+C0131,O00131,Rohan Kapoor,rohan.kapoor7@example.com,59.0, delhi ,Tamil Nadu,Tablet,Electronics,2,21974.38,48182.96,2026-09-12,Debit Card,Returned,1.0
+C0132,O00132,Arjun Mehta,arjun.mehta66@example.com,27.0,DELHI,Haryana,Smartphone,Electronics,3,28556.16,73513.65,2025-06-14,UPI,Shipped,4.0
+C0133,O00133,Tara Singh,tara.singh50@example.com,23.0,Jaipur,Rajasthan,Laptop,Electronics,4,54587.21,190514.95,2026-05-30,UPI,Processing,1.0
+C0134,O00134,Rohan Bansal,rohan.bansal61@example.com,46.0,Jaipur,Rajasthan,Headphones,Accessories,2,2517.3,4307.45,2026-04-29,UPI,Delivered,3.0
+C0135,O00135,Ishaan Jain,ishaan.jain15@example.com,67.0,Hyderabad,Telangana,Headphones,Accessories,5,2468.22,14150.85,2026-09-16,Debit Card,Delivered,1.0
+C0136,O00136,Priya Das,priya.das69@example.com,19.0,Hyderabad,Telangana,Tablet,Electronics,5,22174.18,108584.75,2025-04-24,Cash on Delivery,Shipped,2.0
+C0137,O00137,Rahul Jain,rahul.jain24@example.com,60.0,Pune,Maharashtra,Tablet,Electronics,1,22222.04,22757.74,2025-09-04,Cash on Delivery,Processing,1.0
+C0138,O00138,Reyansh Malhotra,reyansh.malhotra33@example.com,65.0,Gurugram,Haryana,Laptop,Electronics,4,53403.6,244639.87,2025-02-14,UPI,Processing,2.0
+C0139,O00139,Kunal Khanna,kunal.khanna23@example.com,71.0,Mumbai,Maharashtra,Mouse,Accessories,2,915.07,1553.94,2026-07-14,Net Banking,Cancelled,2.0
+C0140,O00140,Meera Singh,meera.singh6@example.com,38.0,Bengaluru,Karnataka,Smartphone,Electronics,4,28728.06,96442.66,2025-07-26,Cash on Delivery,Cancelled,5.0
+C0141,O00141,Diya Malhotra,diya.malhotra7@example.com,73.0,Kolkata,West Bengal,Keyboard,Accessories,1,1816.82,1936.78,2025-07-15,Debit Card,Delivered,3.0
+C0142,O00142,Kunal Gupta,kunal.gupta64@example.com,62.0,Chennai,Tamil Nadu,Tablet,Electronics,4,21996.73,98418.43,2026-01-31,Cash on Delivery,Processing,1.0
+C0143,O00143,Aditi Kapoor,,24.0,Chennai,Tamil Nadu,Smartphone,Electronics,4,27294.52,115442.43,2025-07-04,Debit Card,Processing,4.0
+C0144,O00144,Aditya Sharma,aditya.sharma94@example.com,73.0,Noida,Uttar Pradesh,Tablet,Electronics,2,22543.32,46504.9,2025-12-26,Cash on Delivery,Cancelled,3.0
+C0145,O00145,Aarav Gupta,aarav.gupta78@example.com,61.0,Delhi,Delhi,Smartphone,Electronics,4,28472.6,107407.25,2025-06-13,UPI,Shipped,1.0
+C0146,O00146,Meera Das,meera.das20@example.com,61.0,Hyderabad,Telangana,Mouse,Accessories,3,897.3,2605.11,2026-08-04,Debit Card,Processing,4.0
+C0147,O00147,Arjun Singh,arjun.singh15@example.com,19.0,Mumbai,Maharashtra,Headphones,Accessories,5,2535.35,12001.06,2025-11-18,Net Banking,Returned,4.0
+C0148,O00148,Vivaan Das,vivaan.das37@example.com,62.0,Gurugram,Haryana,Smartphone,Electronics,3,28699.68,90929.1,2026-04-02,Net Banking,Shipped,1.0
+C0149,O00149,Kabir Khanna,kabir.khanna41@example.com,60.0,Bengaluru,Karnataka,Smartphone,Electronics,4,27743.67,101001.25,2026-04-01,UPI,Returned,5.0
+C0150,O00150,Tara Rao,tara.rao29@example.com,25.0,Pune,Maharashtra,Keyboard,Accessories,2,1852.39,3828.75,2025-06-28,Credit Card,Shipped,4.0
+C0151,O00151,Aditi Gupta,aditi.gupta79@example.com,74.0,Delhi,Delhi,Mouse,Accessories,5,877.66,4597.57,2026-04-24,Debit Card,Cancelled,4.0
+C0152,O00152,Rohan Malhotra,rohan.malhotra83@example.com,22.0,Gurugram,Haryana,Tablet,Electronics,4,21933.97,96536.16,2025-03-17,Cash on Delivery,Processing,2.0
+C0153,O00153,Anaya Rao,anaya.rao20@example.com,37.0,Gurugram,Haryana,Headphones,Accessories,2,2449.7,4898.93,2025-02-26,Debit Card,Shipped,3.0
+C0154,O00154,Aditi Kapoor,aditi.kapoor17@example.com,58.0,Gurugram,Haryana,Keyboard,Accessories,1,1778.71,1665.33,2026-10-13,Cash on Delivery,Delivered,5.0
+C0155,O00155,Kunal Das,kunal.das6@example.com,70.0,Bengaluru,Karnataka,Headphones,Accessories,2,2554.57,5238.1,2026-09-12,UPI,Delivered,5.0
+C0156,O00156,Priya Khanna,priya.khanna70@example.com,36.0,Pune,Maharashtra,Monitor,Electronics,5,14119.2,68248.32,2025-02-01,Debit Card,Cancelled,2.0
+C0157,O00157,Isha Mehta,isha.mehta54@example.com,48.0,Chennai,Tamil Nadu,Keyboard,Electonic,4,1796.16,6277.62,2025-03-03,Debit Card,Returned,2.0
+C0158,O00158,Tara Rao,tara.rao72@example.com,24.0,Jaipur,Rajasthan,Mouse,Accessories,3,890.23,3085.05,2025-05-14,Net Banking,Delivered,3.0
+C0159,O00159,Reyansh Das,reyansh.das54@example.com,33.0,Kolkata,West Bengal,Monitor,Electronics,2,14388.66,24613.22,2025-10-25,Credit Card,Processing,5.0
+C0160,O00160,Aditya Mehta,aditya.mehta40@example.com,49.0,Jaipur,Rajasthan,Monitor,Electronics,2,13599.47,27985.43,2026-06-12,Net Banking,Returned,4.0
+C0161,O00161,Diya Mehta,diya.mehta77@example.com,74.0,Hyderabad,Telangana,Monitor,Electronics,5,14287.99,66910.8,2025-02-21,Net Banking,Processing,5.0
+C0162,O00162,Tara Jain,tara.jain47@example.com,20.0,Delhi,Delhi,Smartphone,Electronics,4,27832.98,99700.21,2025-09-28,Cash on Delivery,Returned,2.0
+C0163,O00163,Aditi Kapoor,aditi.kapoor80@example.com,61.0,Jaipur,Rajasthan,Keyboard,Accessories,1,1811.99,1738.63,2026-04-07,Credit Card,Delivered,4.0
+C0164,O00164,Vivaan Das,vivaan.das66@example.com,43.0,Jaipur,Rajasthan,Mouse,Accessories,5,900.0,5092.58,2025-05-28,UPI,Delivered,2.0
+C0165,O00165,Ishaan Gupta,ishaan.gupta42@example.com,57.0,Jaipur,Rajasthan,Smartwatch,Wearables,5,6923.78,34548.38,2026-09-13,Net Banking,Returned,3.0
+C0166,O00166,Priya Bansal,priya.bansal73@example.com,37.0,Noida,Uttar Pradesh,Mouse,Accessories,5,898.64,4943.19,2026-06-30,UPI,Processing,3.0
+C0167,O00167,Aarav Das,aarav.das61@example.com,34.0,Mumbai,Maharashtra,Tablet,Electronics,5,,103653.37,2026-10-07,Cash on Delivery,Returned,2.0
+C0168,O00168,Reyansh Gupta,reyansh.gupta88@example.com,33.0,Delhi,Delhi,Smartwatch,Wearables,2,6803.26,14101.78,2026-09-27,UPI,Shipped,1.0
+C0169,O00169,Nisha Rao,nisha.rao79@example.com,48.0,Kolkata,West Bengal,Mouse,Accessories,4,920.13,3223.55,2025-07-28,UPI,Shipped,5.0
+C0170,O00170,Isha Mehta,isha.mehta69@example.com,39.0,Hyderabad,Telangana,Mouse,Accessories,4,902.5,3627.52,2025-11-18,Debit Card,Returned,4.0
+C0171,O00171,Diya Kapoor,diya.kapoor91@example.com,31.0,Hyderabad,Telangana,Monitor,Electronics,3,14159.8,42731.89,2025-08-19,Net Banking,Processing,4.0
+C0172,O00172,Reyansh Jain,reyansh.jain45@example.com,67.0,Jaipur,Rajasthan,Keyboard,Accessories,3,1832.9,4787.44,2026-07-11,Debit Card,Delivered,3.0
+C0173,O00173,Vivaan Singh,vivaan.singh69@example.com,35.0,Mumbai,Maharashtra,Mouse,Accessories,4,923.38,3768.45,2026-05-06,Debit Card,Shipped,1.0
+C0174,O00174,Sana Khanna,sana.khanna30@example.com,21.0,Noida,Uttar Pradesh,Monitor,Electronics,2,13664.17,24226.43,2026-06-28,Debit Card,Cancelled,1.0
+C0175,O00175,Nisha Khanna,nisha.khanna61@example.com,48.0,Bengaluru,Karnataka,Laptop,Electronics,5,55496.78,314427.63,2025-06-11,Debit Card,Processing,3.0
+C0176,O00176,Isha Jain,isha.jain23@example.com,20.0,Delhi,Delhi,Smartphone,Electronics,5,28835.25,128753.25,2025-02-08,Net Banking,Cancelled,2.0
+C0177,O00177,Anaya Malhotra,anaya.malhotra37@example.com,47.0,Pune,Maharashtra,Laptop,Electronics,1,56614.03,51673.47,2026-09-10,Cash on Delivery,Returned,4.0
+C0178,O00178,Kunal Gupta,kunal.gupta94@example.com,47.0,Bengaluru,Karnataka,Smartwatch,Wearables,-2,7062.28,19064.71,2025-04-26,Credit Card,Delivered,3.0
+C0179,O00179,Nisha Rao,nisha.rao42@example.com,23.0,Pune,Maharashtra,Monitor,Electronics,2,13916.7,28932.02,2026-02-20,UPI,Shipped,2.0
+C0180,O00180,Sana Mehta,sana.mehta97@example.com,35.0,Kolkata,West Bengal,Mouse,Accessories,2,924.52,1533.69,2026-01-28,Debit Card,Returned,5.0
+C0181,O00181,Anaya Mehta,anaya.mehta40@example.com,28.0,Delhi,Delhi,Keyboard,Accessories,3,1789.78,5712.29,2025-03-05,Cash on Delivery,Processing,1.0
+C0182,O00182,Priya Gupta,priya.gupta59@example.com,65.0,Pune,Maharashtra,Mouse,Accessories,5,926.4,4123.15,2025-05-17,Debit Card,Cancelled,5.0
+C0183,O00183,Kabir Rao,kabir.rao58@example.com,51.0,Kolkata,West Bengal,Monitor,Electronics,2,14171.16,29514.87,2026-09-03,UPI,Returned,1.0
+C0184,O00184,Kunal Rao,kunal.rao57@example.com,25.0,Delhi,Delhi,Monitor,Electronics,5,14151.45,70769.86,2025-06-18,Cash on Delivery,Cancelled,
+C0185,O00185,Nisha Mehta,nisha.mehta73@example.com,21.0,Gurugram,Haryana,Smartwatch,Wearables,1,7024.69,6902.21,2026-06-10,Debit Card,Delivered,4.0
+C0186,O00186,Nisha Malhotra,nisha.malhotra90@example.com,22.0,Pune,Maharashtra,Laptop,Electronics,2,55135.84,112584.27,2025-02-16,UPI,Delivered,4.0
+C0187,O00187,Nisha Malhotra,nisha.malhotra49@example.com,46.0,Delhi,Delhi,Keyboard,Accessories,4,1839.92,6508.76,2025-05-19,Net Banking,Cancelled,1.0
+C0188,O00188,Reyansh Rao,reyansh.rao17@example.com,64.0,Gurugram,Haryana,Headphones,Accessories,3,2571.81,6641.92,2026-07-05,UPI,Delivered,3.0
+C0189,O00189,Sana Mehta,sana.mehta45@example.com,27.0,Kolkata,West Bengal,Tablet,Electronics,5,21703.86,106016.12,2025-08-24,UPI,Delivered,4.0
+C0190,O00190,Maya Sharma,maya.sharma58@example.com,56.0,Noida,Uttar Pradesh,Laptop,Electronics,2,55567.68,100300.69,2025-04-14,UPI,Shipped,1.0
+C0191,O00191,Rohan Rao,rohan.rao38@example.com,32.0,Chennai,Tamil Nadu,Smartwatch,Wearables,2,-500.0,14166.99,2025-02-27,Cash on Delivery,Processing,5.0
+C0192,O00192,Ishaan Singh,ishaan.singh53@example.com,37.0,Noida,Uttar Pradesh,Mouse,Accessories,2,887.86,1692.95,2025-05-27,Cash on Delivery,Returned,2.0
+C0193,O00193,Ishaan Malhotra,ishaan.malhotra90@example.com,44.0,Chennai,Tamil Nadu,Smartwatch,Wearables,1,6961.47,7991.81,2026-01-26,Debit Card,Cancelled,2.0
+C0194,O00194,Rohan Mehta,rohan.mehta8@example.com,53.0,Gurugram,Haryana,Smartwatch,Wearables,2,6963.32,15467.23,2025-11-04,Net Banking,Returned,5.0
+C0195,O00195,Kabir Mehta,kabir.mehta48@example.com,23.0,Bengaluru,Karnataka,Tablet,Electronics,2,22047.04,40765.94,2025-12-05,Credit Card,Delivered,3.0
+C0196,O00196,Aditi Singh,aditi.singh62@example.com,31.0,Chennai,Tamil Nadu,Laptop,Electronics,1,56219.26,49854.69,2026-08-25,Debit Card,Processing,1.0
+C0197,O00197,Sana Bansal,sana.bansal78@example.com,63.0,Hyderabad,Telangana,Monitor,Electronics,1,13751.79,15036.89,2026-05-06,Credit Card,Returned,3.0
+C0198,O00198,Diya Kapoor,diya.kapoor47@example.com,50.0,Pune,Maharashtra,Tablet,Electronics,4,22505.31,88888.36,2026-01-03,Net Banking,Delivered,4.0
+C0199,O00199,Rahul Singh,rahul.singh95@example.com,27.0,Jaipur,Rajasthan,Monitor,Electronics,3,13593.62,39642.82,2025-02-16,Cash on Delivery,Returned,5.0
+C0200,O00200,Reyansh Das,reyansh.das32@example.com,49.0,Chennai,Tamil Nadu,Keyboard,Accessories,2,1805.47,3271.89,2025-08-24,Debit Card,Processing,4.0
+C0201,O00201,Isha Gupta,isha.gupta93@example.com,52.0,Kolkata,West Bengal,Smartwatch,Wearables,2,6995.09,14977.64,2025-12-27,Cash on Delivery,Delivered,5.0
+C0202,O00202,Rohan Khanna,rohan.khanna30@example.com,22.0,Delhi,Delhi,Smartphone,Electronics,1,28348.04,30220.45,2026-02-27,UPI,Shipped,5.0
+C0203,O00203,Priya Khanna,priya.khanna63@example.com,,Kolkata,West Bengal,Mouse,Accessories,1,873.36,931.82,2026-09-24,Cash on Delivery,Cancelled,1.0
+C0204,O00204,Ishaan Bansal,ishaan.bansal87@example.com,45.0,Delhi,Delhi,Keyboard,Accessories,5,1833.07,10289.19,2025-01-18,Credit Card,Delivered,1.0
+C0205,O00205,Arjun Malhotra,arjun.malhotra35@example.com,68.0,Gurugram,Haryana,Headphones,Accessories,2,2484.53,4537.9,2026-06-24,Debit Card,Cancelled,4.0
+C0206,O00206,Meera Verma,meera.verma52@example.com,42.0,Noida,Uttar Pradesh,Monitor,Electronics,2,13896.82,26319.79,2025-03-24,Net Banking,Delivered,1.0
+C0207,O00207,Rahul Verma,rahul.verma68@example.com,20.0,Bengaluru,Karnataka,Smartphone,Electronics,4,27546.01,123603.08,2025-12-06,Cash on Delivery,Cancelled,3.0
+C0208,O00208,Meera Gupta,meera.gupta41@example.com,19.0,Delhi,Delhi,Smartphone,Electronics,3,28775.27,94062.65,2026-08-01,Cash on Delivery,Shipped,4.0
+C0209,O00209,Reyansh Khanna,reyansh.khanna70@example.com,39.0,Mumbai,Maharashtra,Keyboard,Accessories,2,1787.46,3669.07,2026-08-04,Credit Card,Delivered,5.0
+C0210,O00210,Kunal Das,kunal.das99@example.com,57.0,Jaipur,Rajasthan,Laptop,Electronics,1,56501.03,53961.96,2025-03-19,Net Banking,Processing,1.0
+C0211,O00211,Reyansh Jain,reyansh.jain24@example.com,61.0,Pune,Maharashtra,Smartwatch,Wearables,4,7036.07,25716.36,2026-07-21,Net Banking,Delivered,5.0
+C0212,O00212,Reyansh Bansal,reyansh.bansal82@example.com,27.0,Pune,Maharashtra,Monitor,Electronics,1,14201.31,9999999.0,2025-06-07,Debit Card,Processing,1.0
+C0213,O00213,Anaya Gupta,anaya.gupta12@example.com,29.0,Mumbai,Maharashtra,Laptop,Electronics,3,54772.23,162264.43,2025-10-04,Cash on Delivery,Returned,5.0
+C0214,O00214,Kabir Das,kabir.das77@example.com,68.0,Chennai,Tamil Nadu,Smartphone,Electronics,1,27705.04,24552.8,2026-07-22,Net Banking,Delivered,3.0
+C0215,O00215,Sana Das,sana.das67@example.com,28.0,Chennai,Tamil Nadu,Tablet,Electronics,1,22244.62,23483.97,2026-07-27,Credit Card,Shipped,3.0
+C0216,O00216,Nisha Kapoor,nisha.kapoor54@example.com,37.0,Pune,Maharashtra,Keyboard,Accessories,4,1798.3,6435.22,2025-06-21,UPI,Processing,3.0
+C0217,O00217,Anaya Gupta,anaya.gupta39@example.com,18.0,Hyderabad,Telangana,Smartwatch,Wearables,5,7188.51,36225.02,2026-04-14,Debit Card,Returned,4.0
+C0218,O00218,Rohan Kapoor,rohan.kapoor42@example.com,56.0,Jaipur,Rajasthan,Smartwatch,Wearables,3,7187.86,20562.88,2026-09-01,Credit Card,Cancelled,3.0
+C0219,O00219,Priya Das,priya.das32@example.com,38.0,Bengaluru,Karnataka,Tablet,Electronics,3,21836.39,61870.67,2026-10-11,Net Banking,Processing,1.0
+C0220,O00220,Aditi Sharma,aditi.sharma94@example.com,47.0,Noida,Uttar Pradesh,Monitor,Electronics,5,14372.1,80442.56,2025-07-04,Credit Card,Cancelled,3.0
+C0221,O00221,Sana Kapoor,sana.kapoor85@example.com,27.0,Mumbai,Maharashtra,Tablet,Electronics,4,22284.11,78474.33,2025-11-07,Net Banking,Delivered,4.0
+C0222,O00222,Nisha Rao,nisha.rao5@example.com,68.0,Noida,Uttar Pradesh,Smartwatch,Wearables,5,7196.74,33958.45,2026-06-03,Cash on Delivery,Returned,1.0
+C0223,O00223,Meera Das,meera.das83@example.com,61.0,Mumbai,Maharashtra,Monitor,Electronics,3,14123.26,37795.87,2026-09-20,Debit Card,Cancelled,1.0
+C0224,O00224,Aditi Das,aditi.das89@example.com,54.0,Delhi,Delhi,Smartphone,Electronics,3,27531.33,76994.43,2026-06-16,Debit Card,Cancelled,4.0
+C0225,O00225,Anaya Kapoor,anaya.kapoor54@example.com,23.0,Noida,Uttar Pradesh,Headphones,Accessories,3,2442.41,8619.83,2026-05-10,Credit Card,Processing,3.0
+C0226,O00226,Priya Verma,priya.verma57@example.com,64.0,Jaipur,Rajasthan,Smartwatch,Wearables,2,7082.64,14088.68,2025-12-23,Debit Card,Delivered,3.0
+C0227,O00227,Isha Bansal,isha.bansal32@example.com,51.0,Delhi,Delhi,Smartphone,Electronics,1,27453.08,30933.11,2025-04-22,Credit Card,Processing,5.0
+C0228,O00228,Isha Gupta,isha.gupta82@example.com,60.0,Chennai,Tamil Nadu,Smartwatch,Wearables,2,6971.5,15250.57,2026-10-07,UPI,Returned,2.0
+C0229,O00229,Vivaan Kapoor,vivaan.kapoor97@example.com,63.0,Kolkata,West Bengal,Tablet,Electronics,4,22407.52,74917.48,2025-08-08,UPI,Returned,1.0
+C0230,O00230,Anaya Kapoor,anaya.kapoor86@example.com,73.0,Gurugram,Haryana,Headphones,Accessories,3,2498.42,7108.47,2026-04-14,Debit Card,Returned,4.0
+C0231,O00231,Aditya Das,aditya.das23@example.com,70.0,Noida,Uttar Pradesh,Tablet,Electronics,5,22229.14,97269.66,2025-12-27,Debit Card,Returned,5.0
+C0232,O00232,Anaya Gupta,anaya.gupta48@example.com,62.0,Mumbai,Maharashtra,Headphones,Accessories,3,2446.2,6640.19,2025-11-09,Net Banking,Cancelled,5.0
+C0233,O00233,Aditi Bansal,aditi.bansal83@example.com,29.0,Bengaluru,Karnataka,Tablet,Electronics,4,22072.48,79703.9,2026-10-13,Net Banking,Processing,2.0
+C0234,O00234,Aarav Mehta,,30.0,Bengaluru,Karnataka,Mouse,Accessories,4,917.02,3728.96,2026-01-03,Cash on Delivery,Returned,4.0
+C0235,O00235,Priya Gupta,priya.gupta11@example.com,54.0,Chennai,Tamil Nadu,Smartwatch,Wearables,4,6802.96,29765.2,2026-03-31,Credit Card,Processing,1.0
+C0236,O00236,Rahul Bansal,rahul.bansal99@example.com,67.0,Pune,Maharashtra,Monitor,Electronics,5,13996.06,65562.08,2026-04-14,Cash on Delivery,Delivered,5.0
+C0237,O00237,Aditi Sharma,aditi.sharma98@example.com,64.0,Mumbai,Maharashtra,Keyboard,Accessories,5,1793.67,9872.86,2026-01-11,Credit Card,Cancelled,1.0
+C0238,O00238,Kabir Mehta,kabir.mehta16@example.com,67.0,Hyderabad,Telangana,Keyboard,Accessories,1,1833.68,1772.86,2025-12-23,Credit Card,Returned,3.0
+C0239,O00239,Vivaan Sharma,vivaan.sharma73@example.com,40.0,Noida,Uttar Pradesh,Tablet,Electronics,2,22042.61,45533.2,2025-07-31,Cash on Delivery,Returned,2.0
+C0240,O00240,Anaya Gupta,anaya.gupta97@example.com,68.0,Jaipur,Rajasthan,Keyboard,Accessories,3,1790.45,5517.83,2026-06-11,UPI,Processing,2.0
+C0241,O00241,Reyansh Mehta,reyansh.mehta19@example.com,54.0,Bengaluru,Karnataka,Monitor,Electronics,2,14111.22,29775.72,2025-09-11,Net Banking,Cancelled,4.0
+C0242,O00242,Tara Mehta,tara.mehta63@example.com,38.0,Mumbai,Maharashtra,Smartphone,Electronics,4,28137.69,112524.61,2025-10-12,UPI,Cancelled,3.0
+C0243,O00243,Priya Kapoor,priya.kapoor42@example.com,71.0,Mumbai,Maharashtra,Tablet,Electronics,2,21714.34,50179.3,2025-08-05,Cash on Delivery,Returned,2.0
+C0244,O00244,Meera Verma,meera.verma81@example.com,68.0,Noida,Uttar Pradesh,Smartwatch,Wearables,3,7141.41,23483.17,2025-02-19,UPI,Delivered,2.0
+C0245,O00245,Vivaan Bansal,vivaan.bansal17@example.com,74.0,Kolkata,West Bengal,Smartwatch,Wearables,1,7063.0,8032.86,2026-03-15,Credit Card,Processing,1.0
+C0246,O00246,Meera Jain,meera.jain81@example.com,37.0,Jaipur,Rajasthan,Keyboard,Accessories,1,1824.41,1730.8,2025-15-40,Credit Card,Cancelled,1.0
+C0247,O00247,Rahul Singh,rahul.singh67@example.com,61.0,Mumbai,Maharashtra,Laptop,Electronics,2,54818.72,109234.62,2025-05-16,UPI,Processing,1.0
+C0248,O00248,Kabir Bansal,kabir.bansal14@example.com,24.0,Chennai,Tamil Nadu,Headphones,Accessories,4,2472.0,8712.48,2026-01-28,Debit Card,Shipped,4.0
+C0249,O00249,Maya Khanna,maya.khanna22@example.com,46.0,Bengaluru,Karnataka,Headphones,Accessories,1,2477.68,2522.88,2025-01-09,Credit Card,Shipped,4.0
+C0250,O00250,Rohan Verma,rohan.verma76@example.com,64.0,Noida,Uttar Pradesh,Smartwatch,Wearables,2,6951.29,12264.09,2025-04-13,Net Banking,Processing,2.0
+C0251,O00251,Maya Bansal,maya.bansal78@example.com,36.0,Hyderabad,Telangana,Keyboard,Accessories,1,1830.13,1664.01,2026-09-08,UPI,Processing,2.0
+C0252,O00252,Sana Mehta,sana.mehta50@example.com,25.0,Gurugram,Haryana,Monitor,Electronics,4,13782.51,52565.11,2025-02-25,Cash on Delivery,Delivered,5.0
+C0253,O00253,Nisha Malhotra,nisha.malhotra70@example.com,61.0,Delhi,Delhi,Mouse,Accessories,3,882.33,2401.91,2026-08-06,Net Banking,Delivered,1.0
+C0254,O00254,Meera Jain,meera.jain65@example.com,36.0,Noida,Uttar Pradesh,Smartphone,Electronics,1,28216.0,26002.36,2025-02-10,Cash on Delivery,Cancelled,4.0
+C0255,O00255,Arjun Verma,arjun.verma40@example.com,23.0,Chennai,Tamil Nadu,Smartphone,Electronics,5,28018.99,141581.53,2025-06-06,Credit Card,Shipped,5.0
+C0256,O00256,Diya Bansal,diya.bansal56@example.com,64.0,Jaipur,Rajasthan,Tablet,Electronics,5,22598.52,114431.71,2025-03-09,Credit Card,Delivered,2.0
+C0257,O00257,Meera Kapoor,meera.kapoor86@example.com,65.0,Mumbai,Maharashtra,Tablet,Electronics,1,22208.63,21692.25,2026-09-16,Credit Card,Delivered,1.0
+C0258,O00258,Ishaan Rao,ishaan.rao93@example.com,34.0,Bengaluru,Karnataka,Laptop,Electronics,2,53900.98,109881.63,2025-12-22,Credit Card,Processing,1.0
+C0259,O00259,Arjun Bansal,arjun.bansal74@example.com,58.0,Delhi,Delhi,Mouse,Accessories,4,877.16,3353.74,2025-03-07,Net Banking,Returned,3.0
+C0260,O00260,Arjun Verma,arjun.verma74@example.com,61.0,Delhi,Delhi,Smartwatch,Wearables,5,7093.57,31502.25,2025-06-11,Credit Card,Returned,1.0
+C0261,O00261,Reyansh Gupta,reyansh.gupta23@example.com,72.0,,Delhi,Laptop,Electronics,2,53466.7,95017.39,2026-01-08,Net Banking,Shipped,3.0
+C0262,O00262,Rahul Malhotra,rahul.malhotra16@example.com,50.0,Hyderabad,Telangana,Tablet,Electronics,3,22228.79,61470.91,2025-03-21,UPI,Shipped,2.0
+C0263,O00263,Diya Kapoor,diya.kapoor42@example.com,23.0,Gurugram,Haryana,Laptop,Electronics,4,55175.2,191549.14,2026-04-22,UPI,Processing,2.0
+C0264,O00264,Rahul Mehta,rahul.mehta99@example.com,67.0,Pune,Maharashtra,Keyboard,Accessories,5,1767.11,8304.98,2026-01-13,Cash on Delivery,Shipped,2.0
+C0265,O00265,Aarav Malhotra,aarav.malhotra1@example.com,66.0,Delhi,Delhi,Tablet,Electronics,1,22207.64,20237.79,2025-12-21,Debit Card,Delivered,2.0
+C0266,O00266,Rohan Bansal,rohan.bansal36@example.com,23.0,Gurugram,Haryana,Monitor,Electronics,4,13616.88,55866.09,2025-03-03,Credit Card,Returned,4.0
+C0267,O00267,Rohan Khanna,rohan.khanna51@example.com,22.0,Jaipur,Rajasthan,Smartwatch,Wearables,1,7038.6,7169.62,2026-06-02,upi,Cancelled,2.0
+C0268,O00268,Kunal Malhotra,kunal.malhotra58@example.com,35.0,Hyderabad,Telangana,Keyboard,Accessories,3,1771.23,5968.48,2026-02-07,Credit Card,Shipped,5.0
+C0269,O00269,Kunal Jain,kunal.jain16@example.com,52.0,Mumbai,Maharashtra,Headphones,Accessories,1,2478.74,2248.28,2026-04-23,Credit Card,Cancelled,3.0
+C0270,O00270,Maya Sharma,maya.sharma28@example.com,71.0,Kolkata,West Bengal,Keyboard,Accessories,1,1838.51,1578.83,2025-11-08,Credit Card,Delivered,2.0
+C0271,O00271,Arjun Gupta,arjun.gupta4@example.com,43.0,Jaipur,Rajasthan,Tablet,Electronics,5,22468.07,95115.37,2025-11-03,Cash on Delivery,Returned,2.0
+C0272,O00272,Anaya Sharma,anaya.sharma8@example.com,71.0,Mumbai,Maharashtra,Smartwatch,Wearables,1,7118.0,7638.18,2025-05-24,Credit Card,Shipped,2.0
+C0273,O00273,Kabir Sharma,kabir.sharma9@example.com,30.0,Chennai,Tamil Nadu,Mouse,Accessories,1,921.73,922.23,2025-09-23,Net Banking,Shipped,1.0
+C0274,O00274,Isha Das,isha.das56@example.com,70.0,Jaipur,Rajasthan,Smartphone,Electronics,1,28377.04,31715.16,2025-02-21,Net Banking,Delivered,4.0
+C0275,O00275,Arjun Kapoor,arjun.kapoor58@example.com,74.0,Chennai,Tamil Nadu,Headphones,Accessories,3,2447.29,6858.11,2025-07-11,Cash on Delivery,Returned,5.0
+C0276,O00276,Priya Sharma,priya.sharma12@example.com,35.0,Hyderabad,Telangana,Keyboard,Accessories,4,1787.37,7009.9,2026-07-18,Net Banking,Shipped,5.0
+C0277,O00277,Priya Rao,priya.rao63@example.com,40.0,Hyderabad,Telangana,Laptop,Electronics,4,56361.83,238606.44,2026-01-03,Cash on Delivery,Processing,4.0
+C0278,O00278,Aarav Kapoor,aarav.kapoor8@example.com,69.0,Pune,Maharashtra,Headphones,Accessories,1,2573.73,2364.16,2025-08-13,Cash on Delivery,Processing,5.0
+C0279,O00279,Arjun Rao,arjun.rao95@example.com,21.0,Hyderabad,Telangana,Headphones,Accessories,1,,2310.89,2025-09-04,Credit Card,Returned,4.0
+C0280,O00280,Tara Das,tara.das4@example.com,63.0,Jaipur,Rajasthan,Headphones,Accessories,2,2530.08,4604.83,2025-11-22,Cash on Delivery,Returned,2.0
+C0281,O00281,Priya Sharma,priya.sharma12@example.com,21.0,Noida,Uttar Pradesh,Monitor,Electronics,4,13775.4,56707.69,2025-06-29,Credit Card,Delivered,5.0
+C0282,O00282,Rohan Malhotra,rohan.malhotra92@example.com,29.0,Kolkata,West Bengal,Laptop,Electronics,3,56381.98,185685.86,2025-07-26,Debit Card,Delivered,1.0
+C0283,O00283,Kabir Malhotra,kabir.malhotra91@example.com,60.0,Bengaluru,Karnataka,Headphones,Accessories,1,2484.34,2759.86,2026-01-09,UPI,Processing,3.0
+C0284,O00284,Priya Khanna,priya.khanna41@example.com,29.0,Jaipur,Rajasthan,Headphones,Accessories,2,2531.08,5348.53,2026-03-24,Cash on Delivery,Returned,3.0
+C0285,O00285,Rohan Gupta,rohan.gupta94@example.com,18.0,Hyderabad,Telangana,Headphones,Accessories,4,2567.32,9420.47,2025-10-29,Cash on Delivery,Cancelled,5.0
+C0286,O00286,Sana Khanna,sana.khanna73@example.com,24.0,Delhi,Delhi,Headphones,Accessories,5,2565.5,11818.31,2026-09-19,Credit Card,Processing,1.0
+C0287,O00287,Kunal Mehta,kunal.mehta2@example.com,34.0,Hyderabad,Telangana,Mouse,Accessories,3,884.32,2430.99,2025-04-01,UPI,Processing,3.0
+C0288,O00288,Isha Jain,isha.jain64@example.com,74.0,Mumbai,Maharashtra,Laptop,Electronics,1,54599.75,53117.96,2026-03-06,Cash on Delivery,Cancelled,1.0
+C0289,O00289,Diya Sharma,diya.sharma41@example.com,34.0,Kolkata,West Bengal,Monitor,Electronics,2,14379.4,27590.81,2025-02-04,UPI,delivered ,2.0
+C0290,O00290,Kunal Das,kunal.das79@example.com,75.0,Chennai,Tamil Nadu,Headphones,Accessories,1,2497.41,2535.28,2025-04-06,UPI,Cancelled,2.0
+C0291,O00291,Vivaan Singh,vivaan.singh53@example.com,62.0,Noida,Uttar Pradesh,Tablet,Electronics,2,22071.43,38106.94,2025-12-06,Cash on Delivery,Processing,3.0
+C0292,O00292,Aditi Mehta,aditi.mehta20@example.com,21.0,Pune,Maharashtra,Monitor,Electronics,1,13883.1,12108.47,2026-08-09,Net Banking,Delivered,3.0
+C0293,O00293,Isha Khanna,isha.khanna38@example.com,23.0,Noida,Uttar Pradesh,Smartwatch,Wearables,2,6988.9,12307.34,2025-07-31,UPI,Processing,4.0
+C0294,O00294,Reyansh Gupta,reyansh.gupta48@example.com,74.0,Kolkata,West Bengal,Smartwatch,Wearables,3,6950.21,18424.16,2026-07-12,Credit Card,Cancelled,1.0
+C0295,O00295,Rahul Sharma,rahul.sharma20@example.com,66.0,Pune,Maharashtra,Smartwatch,Wearables,4,7082.52,26012.57,2025-10-03,UPI,Delivered,3.0
+C0296,O00296,Reyansh Rao,reyansh.rao54@example.com,52.0,Gurugram,Haryana,Tablet,Electronics,5,22246.93,101007.92,2025-03-04,Net Banking,Returned,2.0
+C0297,O00297,Ishaan Das,ishaan.das67@example.com,69.0,Kolkata,West Bengal,Keyboard,Accessories,1,1807.72,1743.19,2025-02-05,Cash on Delivery,Shipped,1.0
+C0298,O00298,Rohan Sharma,rohan.sharma55@example.com,23.0,Kolkata,West Bengal,Headphones,Accessories,2,2573.24,5708.25,2025-07-17,Net Banking,Shipped,2.0
+C0299,O00299,Kabir Jain,kabir.jain72@example.com,43.0,Noida,Uttar Pradesh,Keyboard,Accessories,3,1805.62,6065.5,2025-03-10,Debit Card,Returned,4.0
+C0300,O00300,Rahul Das,rahul.das75@example.com,66.0,Delhi,Delhi,Tablet,Electronics,1,22613.58,21435.32,2025-06-01,UPI,Delivered,5.0
+C0301,O00301,Arjun Jain,arjun.jain84@example.com,49.0,Mumbai,Maharashtra,Keyboard,Accessories,5,1807.78,10026.37,2026-02-25,Net Banking,Delivered,2.0
+C0302,O00302,Meera Jain,,62.0,Pune,Maharashtra,Tablet,Electronics,2,21653.6,45560.83,2026-02-16,Net Banking,Processing,3.0
+C0303,O00303,Anaya Singh,anaya.singh18@example.com,37.0,Delhi,Delhi,Mouse,Accessories,3,925.61,2546.87,2026-05-19,Net Banking,Processing,3.0
+C0304,O00304,Priya Rao,priya.rao48@example.com,70.0,Chennai,Tamil Nadu,Smartphone,Electronics,2,27254.43,55020.84,2026-02-21,Credit Card,Delivered,3.0
+C0305,O00305,Rahul Sharma,rahul.sharma23@example.com,30.0,Gurugram,Haryana,Tablet,Electronics,2,22495.24,47702.82,2026-06-21,Credit Card,Delivered,2.0
+C0306,O00306,Arjun Malhotra,arjun.malhotra60@example.com,50.0,Delhi,Delhi,Smartwatch,Wearables,1,6956.72,7877.87,2025-07-23,UPI,Delivered,2.0
+C0307,O00307,Rahul Rao,rahul.rao45@example.com,40.0,Jaipur,Rajasthan,Smartwatch,Wearables,5,6858.68,34434.09,2026-05-01,Debit Card,Delivered,3.0
+C0308,O00308,Vivaan Singh,vivaan.singh83@example.com,32.0,Delhi,Delhi,Tablet,Electronics,1,22234.56,19775.19,2026-08-09,Debit Card,Cancelled,5.0
+C0309,O00309,Maya Sharma,maya.sharma29@example.com,34.0,Delhi,Delhi,Laptop,Electronics,4,55357.53,247160.02,2025-06-27,Debit Card,Processing,4.0
+C0310,O00310,Diya Khanna,diya.khanna67@example.com,70.0,Chennai,Tamil Nadu,Mouse,Accessories,4,906.67,3332.16,2026-04-23,Cash on Delivery,Delivered,1.0
+C0311,O00311,Diya Kapoor,diya.kapoor88@example.com,24.0,Gurugram,Haryana,Mouse,Accessories,5,899.01,4698.91,2026-09-16,Debit Card,Processing,3.0
+C0312,O00312,Sana Sharma,sana.sharma77@example.com,43.0,Pune,Maharashtra,Keyboard,Accessories,3,1817.34,4895.14,2026-06-14,Credit Card,Delivered,4.0
+C0313,O00313,Rahul Bansal,rahul.bansal74@example.com,70.0,Pune,Maharashtra,Keyboard,Accessories,4,1766.51,6993.93,2025-02-06,Credit Card,Returned,4.0
+C0314,O00314,Isha Kapoor,isha.kapoor13@example.com,48.0,Jaipur,Rajasthan,Keyboard,Accessories,2,1759.82,3967.89,2026-07-26,Debit Card,Returned,2.0
+C0315,O00315,Nisha Malhotra,nisha.malhotra48@example.com,34.0,Jaipur,Rajasthan,Smartphone,Electronics,2,28143.76,53568.76,2025-11-11,Net Banking,Delivered,4.0
+C0316,O00316,Anaya Khanna,anaya.khanna49@example.com,51.0,Delhi,Delhi,Smartphone,Electronics,4,27661.24,125084.72,2026-05-28,UPI,Shipped,2.0
+C0317,O00317,Rohan Malhotra,rohan.malhotra92@example.com,29.0,Hyderabad,Telangana,Mouse,Accessories,4,915.06,4126.17,2026-04-14,Net Banking,Processing,2.0
+C0318,O00318,Isha Das,isha.das98@example.com,28.0,Jaipur,Rajasthan,Laptop,Electronics,1,54965.6,54208.88,2025-08-03,UPI,Shipped,5.0
+C0319,O00319,Reyansh Sharma,reyansh.sharma5@example.com,52.0,Chennai,Tamil Nadu,Tablet,Electronics,4,21603.23,86126.27,2026-05-04,Debit Card,Delivered,3.0
+C0320,O00320,Sana Singh,sana.singh89@example.com,74.0,Gurugram,Haryana,Monitor,Electronics,1,13869.25,14742.34,2026-10-04,Credit Card,Delivered,4.0
+C0321,O00321,Diya Kapoor,diya.kapoor59@example.com,64.0,Gurugram,Haryana,Keyboard,Accessories,2,1802.19,3130.51,2025-02-16,Cash on Delivery,Processing,4.0
+C0322,O00322,Isha Jain,isha.jain3@example.com,32.0,Bengaluru,Karnataka,Mouse,Accessories,4,885.11,3447.99,2025-07-12,Credit Card,Shipped,1.0
+C0323,O00323,Reyansh Khanna,reyansh.khanna33@example.com,67.0,Noida,Uttar Pradesh,Headphones,Accessories,1,2505.21,2399.94,2025-02-08,UPI,Returned,8.0
+C0324,O00324,Aditya Jain,aditya.jain16@example.com,53.0,Mumbai,Maharashtra,Laptop,Electronics,1,54184.04,58130.87,2026-03-03,Credit Card,Shipped,1.0
+C0325,O00325,Maya Das,maya.das90@example.com,26.0,Pune,Maharashtra,Tablet,Electronics,1,21892.85,23072.39,2025-10-04,UPI,Returned,5.0
+C0326,O00326,Vivaan Das,vivaan.das26@example.com,67.0,Mumbai,Maharashtra,Keyboard,Accessories,1,1774.4,1953.77,2026-05-25,Cash on Delivery,Shipped,3.0
+C0327,O00327,Vivaan Bansal,vivaan.bansal62@example.com,39.0,Chennai,Tamil Nadu,Keyboard,Accessories,2,1771.33,3102.56,2026-05-24,UPI,Delivered,1.0
+C0328,O00328,Kabir Bansal,kabir.bansal93@example.com,24.0,Noida,Uttar Pradesh,Smartwatch,Wearables,2,7170.01,15887.67,2026-06-08,Credit Card,Cancelled,3.0
+C0329,O00329,Meera Kapoor,meera.kapoor47@example.com,69.0,Pune,Maharashtra,Smartwatch,Wearables,1,7074.24,6159.6,2025-06-28,Net Banking,Delivered,1.0
+C0330,O00330,Kunal Malhotra,kunal.malhotra57@example.com,57.0,Delhi,Delhi,Laptop,Electronics,2,54235.42,115390.72,2025-06-24,UPI,Processing,3.0
+C0331,O00331,Arjun Jain,arjun.jain89@example.com,72.0,Bengaluru,Karnataka,Smartphone,Electronics,4,27963.45,108648.41,2026-04-13,Net Banking,Shipped,1.0
+C0332,O00332,Priya Das,priya.das87@example.com,46.0,Bengaluru,Karnataka,Laptop,Electronics,2,53948.16,96922.53,2026-08-28,Net Banking,Processing,5.0
+C0333,O00333,Nisha Mehta,nisha.mehta6@example.com,22.0,Delhi,Delhi,Headphones,Accessories,4,2464.24,11261.19,2025-04-26,Debit Card,Delivered,5.0
+C0334,O00334,Anaya Jain,anaya.jain85@example.com,64.0,Noida,Uttar Pradesh,Monitor,Electronics,3,13788.8,42240.66,2026-09-26,Debit Card,Cancelled,2.0
+C0335,O00335,Ishaan Mehta,ishaan.mehta64@example.com,73.0,Gurugram,Haryana,Laptop,Electronics,1,53895.83,57366.08,2025-06-10,Net Banking,Processing,2.0
+C0336,O00336,Reyansh Jain,reyansh.jain31@example.com,23.0,Jaipur,Rajasthan,Keyboard,Accessories,1,1795.58,1803.74,2026-07-18,Cash on Delivery,Cancelled,1.0
+C0337,O00337,Aarav Verma,aarav.verma52@example.com,44.0,Kolkata,West Bengal,Smartwatch,Wearables,3,6805.05,18597.85,2026-05-25,Cash on Delivery,Delivered,1.0
+C0338,O00338,Kunal Malhotra,kunal.malhotra7@example.com,70.0,Noida,Uttar Pradesh,Keyboard,Accessories,5,1770.08,9168.3,2026-04-13,Net Banking,Processing,5.0
+C0339,O00339,Anaya Khanna,anaya.khanna29@example.com,18.0,Noida,Uttar Pradesh,Smartwatch,Wearables,3,6933.37,22360.26,2025-04-27,Debit Card,Returned,5.0
+C0340,O00340,Rohan Bansal,rohan.bansal96@example.com,64.0,Jaipur,Rajasthan,Smartphone,Electronics,1,27847.47,31333.77,2026-05-20,Debit Card,Returned,2.0
+C0341,O00341,Kunal Verma,kunal.verma97@example.com,44.0,Hyderabad,Telangana,Smartphone,Electronics,4,27238.12,102443.81,2025-07-15,Cash on Delivery,Delivered,4.0
+C0342,O00342,Aditi Jain,aditi.jain75@example.com,48.0,Kolkata,West Bengal,Headphones,Accessories,4,2563.66,8513.01,2025-02-19,Credit Card,Returned,2.0
+C0343,O00343,Kunal Rao,kunal.rao50@example.com,44.0,Bengaluru,Karnataka,Smartphone,Electronics,4,28805.56,117292.73,2026-09-13,Credit Card,Processing,4.0
+C0344,O00344,Nisha Das,nisha.das90@example.com,74.0,Jaipur,Rajasthan,Keyboard,Accessories,4,1826.83,7858.36,2025-05-22,Debit Card,Returned,3.0
+C0345,O00345,Tara Khanna,tara.khanna17@example.com,63.0,Gurugram,Haryana,Monitor,Electronics,2,14126.07,25561.59,2025-10-25,Credit Card,Returned,5.0
+C0346,O00346,Rahul Khanna,rahul.khanna91@example.com,44.0,Jaipur,Rajasthan,Smartphone,Electronics,3,28292.73,85569.46,2026-08-20,Cash on Delivery,Processing,4.0
+C0347,O00347,Meera Singh,meera.singh35@example.com,66.0,Delhi,Delhi,Smartphone,Electronics,1,28479.69,26999.31,2025-02-24,Debit Card,Processing,2.0
+C0348,O00348,Tara Mehta,tara.mehta14@example.com,57.0,Delhi,Delhi,Keyboard,Accessories,2,1839.75,3873.88,2025-02-03,Cash on Delivery,Shipped,5.0
+C0349,O00349,Meera Jain,meera.jain50@example.com,44.0,Chennai,Tamil Nadu,Monitor,Electronics,5,14383.63,75970.45,2025-10-22,Debit Card,Returned,1.0
+C0350,O00350,Sana Khanna,sana.khanna91@example.com,63.0,Delhi,Delhi,Keyboard,Accessories,2,1815.94,3730.21,2026-03-30,Cash on Delivery,Returned,5.0
+C0351,O00351,Isha Gupta,isha.gupta95@example.com,50.0,Hyderabad,Telangana,Monitor,Electronics,3,13680.26,41355.07,2025-03-18,UPI,Cancelled,3.0
+C0352,O00352,Aarav Malhotra,aarav.malhotra60@example.com,63.0,Gurugram,Haryana,Keyboard,Accessories,2,1847.25,3233.8,2025-09-19,UPI,Shipped,3.0
+C0353,O00353,Priya Das,priya.das71@example.com,40.0,Noida,Uttar Pradesh,Laptop,Electronics,5,53590.51,303309.05,2025-11-05,Debit Card,Returned,2.0
+C0354,O00354,Aditi Jain,aditi.jain12@example.com,40.0,Bengaluru,Karnataka,Smartphone,Electronics,5,27531.61,125693.56,2026-07-11,Credit Card,Processing,3.0
+C0355,O00355,Ishaan Mehta,ishaan.mehta72@example.com,70.0,Jaipur,Rajasthan,Keyboard,Accessories,2,1827.23,4086.33,2026-09-26,UPI,Delivered,3.0
+C0356,O00356,Meera Khanna,meera.khanna42@example.com,,Kolkata,West Bengal,Monitor,Electronics,5,14349.38,78790.75,2025-09-07,UPI,Cancelled,3.0
+C0357,O00357,Ishaan Rao,ishaan.rao58@example.com,49.0,Gurugram,Haryana,Keyboard,Accessories,1,1750.74,2022.12,2026-01-19,Credit Card,Processing,5.0
+C0358,O00358,Aditi Sharma,aditi.sharma81@example.com,22.0,Mumbai,Maharashtra,Smartphone,Electronics,2,27514.11,63923.36,2026-07-05,Credit Card,Cancelled,1.0
+C0359,O00359,Aarav Mehta,aarav.mehta92@example.com,39.0,Hyderabad,Telangana,Tablet,Electronics,1,21390.01,23629.48,2025-06-07,UPI,Delivered,2.0
+C0360,O00360,Nisha Jain,nisha.jain58@example.com,58.0,Pune,Maharashtra,Smartphone,Electronics,5,27839.47,153508.01,2025-09-22,Debit Card,Delivered,4.0
+C0361,O00361,Meera Bansal,meera.bansal10@example.com,40.0,Mumbai,Maharashtra,Laptop,Electronics,5,56412.56,238967.1,2026-08-23,UPI,Processing,3.0
+C0362,O00362,Reyansh Jain,reyansh.jain85@example.com,19.0,Noida,Uttar Pradesh,Smartphone,Electronics,3,27956.3,90684.91,2026-03-25,Cash on Delivery,Shipped,2.0
+C0363,O00363,Aarav Rao,aarav.rao72@example.com,27.0,Chennai,Tamil Nadu,Keyboard,Accessories,2,1759.31,3381.9,2026-01-18,UPI,Returned,5.0
+C0364,O00364,Vivaan Jain,vivaan.jain83@example.com,72.0,Chennai,Tamil Nadu,Smartphone,Electronics,3,28021.09,76693.33,2025-12-19,Credit Card,Shipped,2.0
+C0365,O00365,Meera Rao,meera.rao60@example.com,59.0,Noida,Uttar Pradesh,Keyboard,Accessories,2,1805.36,3183.79,2026-08-04,Debit Card,Delivered,3.0
+C0366,O00366,Tara Gupta,tara.gupta86@example.com,59.0,Mumbai,Maharashtra,Monitor,Electronics,5,13777.01,69731.0,2025-12-05,Debit Card,Returned,1.0
+C0367,O00367,Diya Bansal,diya.bansal75@example.com,27.0,Hyderabad,Telangana,Mouse,Accessories,4,903.54,3546.7,2026-09-24,Debit Card,Processing,4.0
+C0368,O00368,Nisha Kapoor,nisha.kapoor47@example.com,26.0,Bengaluru,Karnataka,Laptop,Electronics,3,55592.61,152435.67,2025-08-15,Debit Card,Cancelled,4.0
+C0369,O00369,Isha Khanna,isha.khanna78@example.com,23.0,Kolkata,West Bengal,Mouse,Accessories,3,918.46,2689.45,2025-04-22,Credit Card,Returned,2.0
+C0370,O00370,Aarav Das,aarav.das75@example.com,43.0,Pune,Maharashtra,Smartphone,Electronics,1,28452.26,31293.68,2026-06-04,Credit Card,Delivered,5.0
+C0371,O00371,Rahul Bansal,rahul.bansal38@example.com,26.0,Pune,Maharashtra,Smartwatch,Wearables,2,6985.17,13436.44,2025-08-17,Cash on Delivery,Delivered,4.0
+C0372,O00372,Isha Rao,isha.rao18@example.com,46.0,Jaipur,Rajasthan,Laptop,Electronics,2,53875.43,121483.4,2026-09-21,Cash on Delivery,Returned,2.0
+C0373,O00373,Sana Verma,sana.verma34@example.com,41.0,Kolkata,West Bengal,Mouse,Accessories,1,885.64,824.08,2026-05-15,Credit Card,Returned,3.0
+C0374,O00374,Kunal Verma,kunal.verma91@example.com,51.0,Chennai,Tamil Nadu,Smartwatch,Wearables,4,7056.1,31205.04,2025-02-10,Debit Card,Processing,5.0
+C0375,O00375,Rahul Khanna,rahul.khanna10@example.com,51.0,Gurugram,Haryana,Headphones,Accessories,4,2462.74,10461.03,2026-01-10,Credit Card,Returned,4.0
+C0376,O00376,Aarav Rao,aarav.rao18@example.com,46.0,Jaipur,Rajasthan,Mouse,Accessories,4,881.94,3916.07,2026-09-11,UPI,Returned,3.0
+C0377,O00377,Anaya Khanna,anaya.khanna30@example.com,44.0,Hyderabad,Telangana,Headphones,Accessories,2,2546.68,4486.04,2026-09-09,UPI,Cancelled,4.0
+C0378,O00378,Aarav Singh,aarav.singh6@example.com,26.0,Kolkata,West Bengal,Monitor,Electronics,5,14061.73,62886.17,2026-02-25,Credit Card,Shipped,5.0
+C0379,O00379,Ishaan Jain,ishaan.jain77@example.com,54.0,Delhi,Delhi,Headphones,Accessories,1,2520.64,2249.76,2025-07-04,Debit Card,Delivered,2.0
+C0380,O00380,Maya Gupta,maya.gupta75@example.com,70.0,Kolkata,West Bengal,Smartwatch,Wearables,4,7112.35,25232.76,2026-02-25,Cash on Delivery,Returned,3.0
+C0381,O00381,Sana Jain,sana.jain50@example.com,26.0,Bengaluru,Karnataka,Mouse,Accessories,4,878.86,3704.26,2025-03-12,Credit Card,Returned,5.0
+C0382,O00382,Maya Das,maya.das5@example.com,74.0,Chennai,Tamil Nadu,Headphones,Accessories,5,2542.58,10986.12,2026-05-03,Cash on Delivery,Delivered,1.0
+C0383,O00383,Nisha Rao,nisha.rao54@example.com,41.0,Kolkata,West Bengal,Headphones,Accessories,5,2556.22,12647.32,2025-01-02,Cash on Delivery,Cancelled,2.0
+C0384,O00384,Anaya Jain,anaya.jain18@example.com,34.0,Kolkata,West Bengal,Tablet,Electronics,3,21969.83,67763.15,2026-08-13,Credit Card,Delivered,3.0
+C0385,O00385,Rahul Rao,rahul.rao16@example.com,51.0,Noida,Uttar Pradesh,Tablet,Electronics,3,21349.5,59842.62,2025-01-08,Credit Card,Processing,4.0
+C0386,O00386,Arjun Kapoor,arjun.kapoor69@example.com,45.0,Jaipur,Rajasthan,Smartphone,Electronics,2,28108.65,54758.0,2026-08-23,Cash on Delivery,Processing,4.0
+C0387,O00387,Isha Malhotra,isha.malhotra72@example.com,53.0,Hyderabad,Telangana,Tablet,Electronics,5,21978.56,119365.02,2026-05-10,Debit Card,Returned,3.0
+C0388,O00388,Isha Verma,isha.verma28@example.com,50.0,Chennai,Tamil Nadu,Headphones,Accessories,1,2485.08,2685.86,2026-04-03,Debit Card,Returned,5.0
+C0389,O00389,Kabir Gupta,kabir.gupta61@example.com,56.0,Delhi,Delhi,Headphones,Accessories,4,2490.31,11393.71,2025-01-06,UPI,Processing,2.0
+C0390,O00390,Reyansh Das,reyansh.das84@example.com,51.0,Jaipur,Rajasthan,Smartphone,Electronics,5,27641.27,120585.72,2026-01-29,Cash on Delivery,Delivered,2.0
+C0391,O00391,Diya Singh,diya.singh5@example.com,68.0,Kolkata,West Bengal,Smartwatch,Wearables,1,7041.8,6373.59,2026-06-15,Cash on Delivery,Shipped,5.0
+C0392,O00392,Isha Verma,isha.verma36@example.com,67.0,Bengaluru,Karnataka,Laptop,Electronics,3,54668.13,152093.2,2025-01-01,Net Banking,Cancelled,5.0
+C0393,O00393,Diya Bansal,diya.bansal72@example.com,55.0,Hyderabad,Telangana,Laptop,Electronics,1,54498.71,61916.43,2026-07-17,Debit Card,Shipped,5.0
+C0394,O00394,Isha Jain,isha.jain65@example.com,24.0,Hyderabad,Telangana,Smartwatch,Wearables,4,7024.62,28629.22,2025-09-25,Cash on Delivery,Processing,3.0
+C0395,O00395,Arjun Bansal,arjun.bansal57@example.com,42.0,Mumbai,Maharashtra,Keyboard,Accessories,5,1806.82,9845.5,2026-08-12,Credit Card,Processing,4.0
+C0396,O00396,Reyansh Khanna,reyansh.khanna29@example.com,61.0,Kolkata,West Bengal,Laptop,Electronics,4,55663.88,194673.71,2025-03-11,Debit Card,Cancelled,3.0
+C0397,O00397,Reyansh Khanna,reyansh.khanna96@example.com,70.0,Gurugram,Haryana,Laptop,Electronics,3,54478.58,152538.75,2025-04-06,Cash on Delivery,Shipped,4.0
+C0398,O00398,Isha Bansal,isha.bansal88@example.com,30.0,Jaipur,Rajasthan,Mouse,Accessories,2,899.95,2012.93,2025-10-03,Credit Card,Shipped,2.0
+C0399,O00399,Maya Malhotra,maya.malhotra20@example.com,67.0,Pune,Maharashtra,Monitor,Electronics,2,13669.62,25503.24,2025-09-13,UPI,Cancelled,5.0
+C0400,O00400,Priya Das,priya.das36@example.com,49.0,Delhi,Punjab,Laptop,Electronics,4,53953.48,211498.97,2025-11-19,Cash on Delivery,Processing,4.0
+C0401,O00401,Priya Rao,priya.rao5@example.com,50.0,Hyderabad,Telangana,Headphones,Accessories,1,2477.09,2519.3,2026-03-10,Credit Card,Cancelled,1.0
+C0402,O00402,Vivaan Jain,vivaan.jain75@example.com,24.0,Gurugram,Haryana,Smartwatch,Wearables,3,6926.68,22192.03,2025-01-13,Cash on Delivery,Processing,2.0
+C0403,O00403,Kunal Malhotra,kunal.malhotra24@example.com,49.0,Gurugram,Haryana,Keyboard,Accessories,2,1791.79,3350.96,2026-09-20,Net Banking,Processing,3.0
+C0404,O00404,Rahul Khanna,rahul.khanna30@example.com,70.0,Chennai,Tamil Nadu,Keyboard,Accessories,4,1756.79,6508.56,2025-05-15,Debit Card,Shipped,5.0
+C0405,O00405,Priya Sharma,priya.sharma23@example.com,44.0,Chennai,Tamil Nadu,Tablet,Electronics,2,21999.47,39325.14,2025-06-03,Cash on Delivery,Returned,3.0
+C0406,O00406,Meera Jain,meera.jain13@example.com,62.0,Kolkata,West Bengal,Keyboard,Accessories,3,1763.64,5500.66,2026-08-05,Credit Card,Processing,4.0
+C0407,O00407,Aditi Rao,aditi.rao33@example.com,40.0,Mumbai,Maharashtra,Smartwatch,Wearables,3,6798.33,19486.55,2026-01-04,UPI,Processing,5.0
+C0408,O00408,Priya Bansal,priya.bansal58@example.com,74.0,Hyderabad,Telangana,Headphones,Accessories,3,2436.76,7174.0,2026-06-07,Cash on Delivery,Processing,4.0
+C0409,O00409,Rahul Jain,rahul.jain10@example.com,23.0,Bengaluru,Karnataka,Headphones,Accessories,3,2449.3,7324.09,2026-09-20,Credit Card,Processing,3.0
+C0410,O00410,Aditya Malhotra,aditya.malhotra96@example.com,55.0,Pune,Maharashtra,Keyboard,Accessories,5,1802.26,9390.54,2025-10-05,Net Banking,Cancelled,2.0
+C0411,O00411,Kabir Singh,kabir.singh22@example.com,43.0,Bengaluru,Karnataka,Laptop,Electronics,2,53689.93,117516.49,2025-09-15,UPI,Cancelled,5.0
+C0412,O00412,Anaya Kapoor,anaya.kapoor80@example.com,27.0,Delhi,Delhi,Laptop,Electronics,4,53628.23,221582.86,2025-03-27,Net Banking,Processing,2.0
+C0413,O00413,Ishaan Gupta,ishaan.gupta4@example.com,20.0,Hyderabad,Telangana,Keyboard,Accessories,4,1817.66,7473.2,2025-05-15,Debit Card,Cancelled,4.0
+C0414,O00414,Isha Das,isha.das77@example.com,47.0,Gurugram,Haryana,Keyboard,Accessories,5,1814.15,8851.08,2026-07-07,Cash on Delivery,Cancelled,5.0
+C0415,O00415,Kabir Mehta,kabir.mehta40@example.com,41.0,Gurugram,Haryana,Keyboard,Accessories,3,1790.52,5370.28,2025-08-21,Credit Card,Processing,1.0
+C0416,O00416,Aarav Bansal,aarav.bansal63@example.com,66.0,Delhi,Delhi,Headphones,Accessories,3,2496.56,7020.22,2026-07-02,UPI,Cancelled,3.0
+C0417,O00417,Nisha Rao,nisha.rao56@example.com,43.0,Noida,Uttar Pradesh,Monitor,Electronics,1,13789.91,14202.49,2025-07-13,Net Banking,Cancelled,2.0
+C0418,O00418,Maya Bansal,maya.bansal88@example.com,35.0,Pune,Maharashtra,Smartphone,Electronics,4,27638.26,116210.85,2026-06-14,Cash on Delivery,Processing,4.0
+C0419,O00419,Aditya Das,aditya.das58@example.com,35.0,Hyderabad,Telangana,Smartphone,Electronics,2,28336.79,49895.28,2025-04-24,Net Banking,Shipped,3.0
+C0420,O00420,Isha Verma,isha.verma37@example.com,35.0,Delhi,Delhi,Headphones,Accessories,1,2443.76,2852.29,2025-01-23,Net Banking,Delivered,2.0
+C0421,O00421,Nisha Kapoor,nisha.kapoor64@example.com,41.0,Mumbai,Maharashtra,Headphones,Accessories,1,2494.55,2495.18,2025-12-17,UPI,Processing,
+C0422,O00422,Aditi Mehta,aditi.mehta24@example.com,30.0,Bengaluru,Karnataka,Laptop,Electronics,3,56305.81,178644.82,2025-03-15,Debit Card,Cancelled,1.0
+C0423,O00423,Sana Bansal,sana.bansal5@example.com,30.0,Mumbai,Maharashtra,Monitor,Electronics,4,13967.1,60556.59,2026-03-30,UPI,Returned,2.0
+C0424,O00424,Meera Bansal,meera.bansal71@example.com,51.0,Kolkata,West Bengal,Tablet,Electronics,3,21501.23,74637.06,2025-06-12,Net Banking,Processing,2.0
+C0425,O00425,Nisha Malhotra,nisha.malhotra2@example.com,28.0,Jaipur,Rajasthan,Laptop,Electronics,2,55971.49,125618.04,2025-08-30,Cash on Delivery,Delivered,4.0
+C0426,O00426,Maya Gupta,maya.gupta48@example.com,67.0,Hyderabad,Telangana,Laptop,Electronics,1,53645.28,56337.77,2026-05-02,Credit Card,Cancelled,1.0
+C0427,O00427,Aditi Verma,aditi.verma17@example.com,49.0,Noida,Uttar Pradesh,Mouse,Accessories,1,885.56,781.14,2025-06-07,Cash on Delivery,Processing,4.0
+C0428,O00428,Arjun Sharma,arjun.sharma63@example.com,63.0,Hyderabad,Telangana,Laptop,Electronics,4,54793.75,210639.05,2025-05-18,Debit Card,Returned,4.0
+C0429,O00429,Arjun Das,arjun.das71@example.com,28.0,Hyderabad,Telangana,Headphones,Accessories,5,2435.33,11928.74,2026-04-25,Credit Card,Cancelled,3.0
+C0430,O00430,Reyansh Bansal,reyansh.bansal24@example.com,74.0,Pune,Maharashtra,Mouse,Accessories,4,874.01,3060.78,2026-06-03,Debit Card,Returned,2.0
+C0431,O00431,Ishaan Khanna,N/A,67.0,Jaipur,Rajasthan,Smartphone,Electronics,5,28086.47,153400.09,2025-07-14,Cash on Delivery,Processing,3.0
+C0432,O00432,Meera Gupta,meera.gupta23@example.com,73.0,Chennai,Tamil Nadu,Mouse,Accessories,1,874.69,790.99,2025-03-10,UPI,Cancelled,2.0
+C0433,O00433,Priya Rao,priya.rao80@example.com,62.0,Mumbai,Maharashtra,Laptop,Electronics,5,55297.99,286694.51,2026-02-02,UPI,Processing,2.0
+C0434,O00434,Priya Verma,priya.verma60@example.com,69.0,Noida,Uttar Pradesh,Smartphone,Electronics,1,28233.38,31613.77,2025-08-02,Debit Card,Returned,4.0
+C0435,O00435,Kabir Kapoor,kabir.kapoor10@example.com,31.0,Jaipur,Rajasthan,Laptop,Electronics,5,56519.94,255679.79,2025-02-11,UPI,Delivered,2.0
+C0436,O00436,Rahul Khanna,rahul.khanna23@example.com,53.0,Gurugram,Haryana,Tablet,Electronics,2,22328.94,39949.18,2025-09-12,Net Banking,Delivered,5.0
+C0437,O00437,Isha Rao,isha.rao52@example.com,50.0,Jaipur,Rajasthan,Smartwatch,Wearables,4,6931.76,31215.72,2025-06-20,Credit Card,Returned,5.0
+C0438,O00438,Tara Jain,tara.jain98@example.com,58.0,Kolkata,West Bengal,Mouse,Accessories,3,896.25,2740.57,2025-11-29,Debit Card,Returned,2.0
+C0439,O00439,Tara Mehta,tara.mehta58@example.com,43.0,Noida,Uttar Pradesh,Monitor,Electronics,4,13580.16,60463.9,2025-09-18,UPI,Processing,5.0
+C0440,O00440,Vivaan Malhotra,vivaan.malhotra3@example.com,67.0,Delhi,Delhi,Headphones,Accessories,3,2548.29,6389.78,2025-08-16,Debit Card,Returned,5.0
+C0441,O00441,Rohan Gupta,rohan.gupta34@example.com,41.0,Gurugram,Haryana,Headphones,Accessories,1,2558.44,2153.3,2025-12-31,Credit Card,Shipped,3.0
+C0442,O00442,Kabir Bansal,kabir.bansal42@example.com,68.0,Pune,Maharashtra,Smartphone,Electronics,5,27970.66,135791.53,2025-08-11,Net Banking,Returned,1.0
+C0443,O00443,Reyansh Verma,reyansh.verma8@example.com,67.0,Noida,Uttar Pradesh,Keyboard,Accessories,1,1782.11,1924.63,2026-08-14,Net Banking,Cancelled,1.0
+C0444,O00444,Meera Malhotra,meera.malhotra70@example.com,54.0,Hyderabad,Telangana,Laptop,Electronics,4,53843.61,190572.44,2026-06-21,Cash on Delivery,Shipped,2.0
+C0445,O00445,Ishaan Verma,ishaan.verma29@example.com,45.0,Delhi,Delhi,Tablet,Electronics,4,21722.51,94674.98,2026-08-13,Net Banking,Shipped,2.0
+C0446,O00446,Aditi Jain,aditi.jain34@example.com,23.0,Jaipur,Rajasthan,Smartphone,Electronics,4,27829.53,114400.4,2025-02-20,Net Banking,Shipped,2.0
+C0447,O00447,Vivaan Rao,vivaan.rao79@example.com,65.0,Kolkata,West Bengal,Monitor,Electronics,4,14020.37,54241.36,2026-08-09,Credit Card,Delivered,3.0
+C0448,O00448,Nisha Malhotra,nisha.malhotra45@example.com,30.0,Chennai,Tamil Nadu,Mouse,Accessories,5,890.32,3945.95,2026-02-28,Cash on Delivery,Delivered,3.0
+C0449,O00449,Maya Gupta,maya.gupta57@example.com,20.0,Bengaluru,Karnataka,Mouse,Accessories,5,922.91,4934.14,2026-03-29,Credit Card,Shipped,3.0
+C0450,O00450,Maya Gupta,maya.gupta37@example.com,18.0,Bengaluru,Karnataka,Smartphone,Electronics,1,27736.7,30012.49,2025-09-06,UPI,Processing,4.0
+C0451,O00451,Vivaan Singh,vivaan.singh70@example.com,51.0,Kolkata,West Bengal,Laptop,Electronics,3,55826.17,150595.97,2026-07-05,Cash on Delivery,Cancelled,5.0
+C0452,O00452, ,meera.kapoor22@example.com,21.0,Bengaluru,Karnataka,Laptop,Electronics,4,54287.24,225478.33,2026-06-24,Cash on Delivery,Processing,1.0
+C0453,O00453,Tara Verma,tara.verma3@example.com,36.0,Kolkata,West Bengal,Laptop,Electronics,1,56212.45,53162.64,2025-10-05,Net Banking,Shipped,4.0
+C0454,O00454,Aditi Verma,aditi.verma24@example.com,30.0,Gurugram,Haryana,Smartphone,Electronics,3,28001.09,83613.49,2026-09-04,Net Banking,Returned,1.0
+C0455,O00455,Reyansh Bansal,reyansh.bansal21@example.com,19.0,Delhi,Delhi,Monitor,Electronics,5,13871.3,65903.48,2026-05-17,Debit Card,Processing,3.0
+C0456,O00456,Aarav Rao,aarav.rao36@example.com,32.0,Hyderabad,Telangana,Keyboard,Accessories,1,1762.38,1867.93,2026-02-01,Net Banking,Shipped,1.0
+C0457,O00457,Nisha Kapoor,nisha.kapoor78@example.com,39.0,Chennai,Tamil Nadu,Monitor,Electronics,4,13957.3,51638.06,2025-06-06,Credit Card,Shipped,2.0
+C0458,O00458,Rohan Jain,rohan.jain99@example.com,27.0,Noida,Uttar Pradesh,Monitor,Electronics,2,14131.23,26395.59,2026-06-21,Cash on Delivery,Shipped,3.0
+C0459,O00459,Aarav Malhotra,aarav.malhotra53@example.com,44.0,Mumbai,Maharashtra,Smartphone,Electronics,2,27669.62,52935.64,2025-05-30,Debit Card,Shipped,2.0
+C0460,O00460,Maya Kapoor,maya.kapoor78@example.com,54.0,Mumbai,Maharashtra,Headphones,Accessories,2,2516.85,4289.3,2026-09-19,Cash on Delivery,Shipped,2.0
+C0461,O00461,Rohan Rao,rohan.rao78@example.com,48.0,Delhi,Delhi,Mouse,Accessories,1,911.45,950.8,2026-05-04,Debit Card,Shipped,4.0
+C0462,O00462,Meera Jain,meera.jain98@example.com,18.0,Kolkata,West Bengal,Smartwatch,Wearables,2,7178.68,12587.9,2025-08-20,Net Banking,Shipped,2.0
+C0463,O00463,Maya Mehta,maya.mehta89@example.com,38.0,Hyderabad,Telangana,Smartphone,Electronics,2,28616.18,63175.33,2026-03-26,Credit Card,Cancelled,4.0
+C0464,O00464,Maya Rao,maya.rao68@example.com,59.0,Delhi,Delhi,Tablet,Electronics,3,22496.03,63904.18,2026-08-09,UPI,Returned,1.0
+C0465,O00465,Ishaan Rao,ishaan.rao51@example.com,65.0,Kolkata,West Bengal,Smartwatch,Wearables,1,6806.49,7793.34,2025-09-09,Net Banking,Returned,1.0
+C0466,O00466,Diya Mehta,diya.mehta22@example.com,45.0,Hyderabad,Telangana,Keyboard,Accessories,4,1777.8,6979.77,2025-11-08,UPI,Returned,2.0
+C0467,O00467,Isha Das,isha.das90@example.com,52.0,Kolkata,West Bengal,Smartwatch,Wearables,1,6846.83,7467.56,2025-04-26,Net Banking,Processing,4.0
+C0468,O00468,Aditya Verma,aditya.verma33@example.com,38.0,Delhi,Delhi,Headphones,Accessories,4,2528.76,10270.95,2025-07-26,Credit Card,Delivered,1.0
+C0469,O00469,Ishaan Das,ishaan.das21@example.com,42.0,Mumbai,Maharashtra,Smartwatch,Wearables,3,7021.15,18387.43,2026-01-29,UPI,Shipped,3.0
+C0470,O00470,Meera Jain,meera.jain40@example.com,37.0,Noida,Uttar Pradesh,Headphones,Accessories,2,2534.52,5553.23,2025-07-03,Net Banking,Processing,2.0
+C0471,O00471,Aarav Mehta,aarav.mehta64@example.com,72.0,Mumbai,Maharashtra,Headphones,Accessories,2,2499.8,4255.3,2025-09-17,UPI,Returned,4.0
+C0472,O00472,Nisha Mehta,nisha.mehta11@example.com,56.0,Hyderabad,Telangana,Monitor,Electronics,5,14084.09,73348.88,2026-04-10,Credit Card,Returned,3.0
+C0473,O00473,Tara Sharma,tara.sharma19@example.com,72.0,Noida,Uttar Pradesh,Monitor,Electronics,1,13607.24,12676.33,2025-02-26,Cash on Delivery,Returned,3.0
+C0474,O00474,Isha Khanna,isha.khanna37@example.com,57.0,Jaipur,Rajasthan,Smartphone,Electronics,1,28270.35,24714.66,2025-07-02,Cash on Delivery,Returned,5.0
+C0475,O00475,Kabir Kapoor,kabir.kapoor42@example.com,41.0,Bengaluru,Karnataka,Smartwatch,Wearables,5,7166.96,33531.98,2025-02-06,UPI,Cancelled,5.0
+C0476,O00476,Kunal Rao,kunal.rao53@example.com,51.0,Mumbai,Maharashtra,Keyboard,Accessories,4,1768.66,6410.62,2025-10-09,Credit Card,Returned,1.0
+C0477,O00477,Diya Jain,diya.jain78@example.com,72.0,Mumbai,Maharashtra,Smartphone,Electronics,4,27691.7,119528.89,2026-09-12,Cash on Delivery,Returned,5.0
+C0478,O00478,Priya Mehta,priya.mehta24@example.com,74.0,Jaipur,Rajasthan,Headphones,Accessories,5,2516.41,12734.88,2026-06-17,Debit Card,Shipped,1.0
+C0479,O00479,Vivaan Das,vivaan.das54@example.com,44.0,Mumbai,Maharashtra,Laptop,Electronics,4,53500.12,228280.41,2025-05-01,Debit Card,Returned,2.0
+C0480,O00480,Diya Kapoor,diya.kapoor65@example.com,53.0,Delhi,Delhi,Monitor,Electronics,3,13852.1,38905.66,2025-03-11,UPI,Delivered,3.0
+C0481,O00481,Isha Singh,isha.singh43@example.com,71.0,Jaipur,Rajasthan,Tablet,Electronics,5,21786.08,113827.78,2025-01-30,Net Banking,Cancelled,1.0
+C0482,O00482,Kunal Mehta,kunal.mehta53@example.com,65.0,Bengaluru,Karnataka,Smartwatch,Wearables,2,6813.53,14534.24,2026-07-04,Cash on Delivery,Processing,5.0
+C0483,O00483,Tara Verma,tara.verma20@example.com,35.0,Jaipur,Rajasthan,Laptop,Electronics,2,56124.44,112554.12,2025-12-06,Debit Card,Cancelled,5.0
+C0484,O00484,Kunal Bansal,kunal.bansal5@example.com,35.0,Bengaluru,Karnataka,Tablet,Electronics,2,21886.31,45256.53,2025-11-12,Net Banking,Shipped,3.0
+C0485,O00485,Anaya Malhotra,anaya.malhotra5@example.com,67.0,Kolkata,West Bengal,Keyboard,Accessories,2,1767.83,3627.11,2025-06-29,UPI,Cancelled,5.0
+C0486,O00486,Priya Bansal,priya.bansal68@example.com,37.0,Delhi,Delhi,Smartwatch,Wearables,5,7115.72,31367.82,2025-12-15,Credit Card,Delivered,5.0
+C0487,O00487,Anaya Sharma,anaya.sharma40@example.com,20.0,Bengaluru,Karnataka,Monitor,Electronics,1,14157.12,13829.35,2026-06-19,Cash on Delivery,Delivered,3.0
+C0488,O00488,Aarav Das,aarav.das98@example.com,37.0,Kolkata,West Bengal,Laptop,Electronics,1,55458.21,55339.53,2025-11-16,Credit Card,Processing,2.0
+C0489,O00489,Anaya Kapoor,anaya.kapoor20@example.com,28.0,Hyderabad,Telangana,Keyboard,Accessories,3,1775.55,5452.29,2026-03-28,UPI,Returned,5.0
+C0490,O00490,Kunal Kapoor,kunal.kapoor19@example.com,63.0,Gurugram,Haryana,Smartphone,Electronics,2,28510.72,56714.48,2026-07-17,Cash on Delivery,Shipped,2.0
+C0491,O00491,Aditya Sharma,aditya.sharma17@example.com,19.0,Mumbai,Maharashtra,Keyboard,Accessories,5,1796.84,10059.06,2026-07-08,UPI,Delivered,4.0
+C0492,O00492,Rahul Khanna,rahul.khanna89@example.com,62.0,Delhi,Delhi,Smartphone,Electronics,4,27909.0,108368.4,2026-09-03,Debit Card,Processing,3.0
+C0493,O00493,Aditya Verma,aditya.verma59@example.com,37.0,Hyderabad,Telangana,Smartphone,Electronics,4,28309.92,114277.72,2025-04-06,Net Banking,Cancelled,2.0
+C0494,O00494,Reyansh Gupta,reyansh.gupta90@example.com,60.0,Hyderabad,Telangana,Headphones,Accessories,5,2474.55,11592.7,2026-01-08,Debit Card,Cancelled,4.0
+C0495,O00495,Aditya Gupta,aditya.gupta37@example.com,67.0,Delhi,Delhi,Smartphone,Electronics,4,27745.67,98993.01,2026-05-06,Cash on Delivery,Shipped,5.0
+C0496,O00496,Diya Rao,diya.rao60@example.com,43.0,Mumbai,Maharashtra,Tablet,Electronics,1,22119.51,20850.74,2025-03-14,Credit Card,Returned,2.0
+C0497,O00497,Vivaan Bansal,vivaan.bansal76@example.com,45.0,Gurugram,Haryana,Headphones,Accessories,4,2542.65,9651.45,2025-12-15,Net Banking,Returned,3.0
+C0498,O00498,Rahul Mehta,rahul.mehta15@example.com,55.0,Gurugram,Haryana,Monitor,Electronics,2,14080.7,29365.94,2025-03-21,Debit Card,Returned,1.0
+C0499,O00499,Maya Verma,maya.verma88@example.com,70.0,Kolkata,West Bengal,Headphones,Accessories,3,2514.46,8525.74,2025-03-13,Net Banking,Processing,4.0
+C0500,O00500,Aarav Gupta,aarav.gupta85@example.com,27.0,Delhi,Delhi,Smartphone,Electronics,2,27921.0,61326.16,2026-08-18,Debit Card,Cancelled,5.0
+C0025,O00025,Aditya Malhotra,aditya.malhotra97@example.com,22.0,Jaipur,Rajasthan,Monitor,Electronics,3,13587.82,40686.9,2025-11-04,Cash on Delivery,Returned,1.0
+C0088,O00088,Rahul Kapoor,rahul.kapoor90@example.com,36.0,Kolkata,West Bengal,Smartphone,Electronics,2,27196.86,54006.92,2026-01-03,Net Banking,Processing,1.0
+C0167,O00167,Aarav Das,aarav.das61@example.com,34.0,Mumbai,Maharashtra,Tablet,Electronics,5,,103653.37,2026-10-07,Cash on Delivery,Returned,2.0
+C0301,O00301,Arjun Jain,arjun.jain84@example.com,49.0,Mumbai,Maharashtra,Keyboard,Accessories,5,1807.78,10026.37,2026-02-25,Net Banking,Delivered,2.0

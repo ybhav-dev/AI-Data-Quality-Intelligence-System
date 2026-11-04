@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}Data Cleaning | DataQual{% endblock %}
+{% block content %}
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">DQ</div><div><strong>DataQual</strong><small>Intelligence System</small></div></div>
+    <div class="nav-label">WORKSPACE</div>
+    <a class="nav-item" href="/"><span class="nav-icon">▦</span> Overview</a>
+    <a class="nav-item" href="/#uploadTrigger"><span class="nav-icon">⇧</span> Upload Dataset</a>
+    <a class="nav-item" href="/analysis"><span class="nav-icon">⌕</span> Data Analysis</a>
+    <a class="nav-item" href="/business-insights"><span class="nav-icon">↗</span> Business Insights</a>
+    <a class="nav-item" href="/recommendations"><span class="nav-icon">✦</span> AI Recommendations</a>
+    <a class="nav-item active" href="/cleaning"><span class="nav-icon">♧</span> Data Cleaning</a>
+    <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">?</div><strong>Need a hand?</strong><p>Preview changes before exporting a cleaned copy.</p><button class="button button-light help-guide-trigger" type="button">View guide</button></div><div class="profile"><div class="avatar">VS</div><div><strong>Workspace</strong><small>Data Analyst</small></div><span class="profile-dots">•••</span></div></div>
+  </aside>
+  <main class="main-content">
+    <header class="topbar"><div class="breadcrumb"><a href="/">Workspace</a> <span>/</span> Data Cleaning</div><div class="topbar-actions"><div class="top-avatar">VS</div></div></header>
+    <section class="page-heading"><div><p class="eyebrow">DATA QUALITY WORKSPACE</p><h1>Data cleaning<span class="heading-dot">.</span></h1><p class="subheading">Choose cleaning operations, preview the result, and export a reliable dataset.</p></div><a class="button button-primary" href="/analysis">← Data Analysis</a></section>
+    {% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}<div class="recommendation-flashes">{% for category,message in messages %}<div class="flash flash-{{ category }}">{{ message }}</div>{% endfor %}</div>{% endif %}{% endwith %}
+    {% if has_dataset %}
+      <section class="analysis-summary"><div><span class="summary-label">CURRENT DATASET</span><strong>{{ filename }}</strong><small>{{ rows }} rows · {{ column_count }} columns</small></div><div class="analysis-score"><span>DATASET SIZE</span><strong>{{ rows }}<small> rows</small></strong></div></section>
+      <div class="cleaning-stat-grid"><div class="cleaning-stat"><span>Missing cells</span><strong>{{ missing }}</strong></div><div class="cleaning-stat"><span>Duplicate rows</span><strong>{{ duplicates }}</strong></div><div class="cleaning-stat"><span>Columns</span><strong>{{ column_count }}</strong></div></div>
+      <form id="cleaningForm" method="post" action="/cleaning/apply">
+        <section class="panel cleaning-controls">
+          <div class="panel-heading"><div><h3>Cleaning operations</h3><p>Select one or more transformations to apply</p></div><span class="issue-total">Safe, local operations</span></div>
+          <div class="cleaning-options">
+            <label class="cleaning-option"><input type="checkbox" name="operations" value="fill_missing"><span><strong>Handle missing values</strong><small>Fill numeric columns with median and text columns with mode.</small></span></label>
+            <label class="cleaning-option"><input type="checkbox" name="operations" value="trim"><span><strong>Trim whitespace</strong><small>Remove leading and trailing spaces from text fields.</small></span></label>
+            <label class="cleaning-option"><input type="checkbox" name="operations" value="standardize_case"><span><strong>Standardize text case</strong><small>Convert text fields to title case for consistent labels.</small></span></label>
+            <label class="cleaning-option"><input type="checkbox" name="operations" value="drop_duplicates"><span><strong>Remove duplicate rows</strong><small>Keep the first copy of each exact duplicate record.</small></span></label>
+            <label class="cleaning-option"><input type="checkbox" name="operations" value="drop_missing_rows"><span><strong>Remove rows with missing values</strong><small>Drop rows containing actual empty cells. Use carefully.</small></span></label>
+          </div>
+          <div class="cleaning-actions"><button class="button button-outline" type="button" id="previewCleaning">Preview changes</button><button class="button button-primary" type="submit">Apply cleaning</button></div>
+        </section>
+      </form>
+      <section class="panel cleaning-preview" id="cleaningPreview" hidden>
+        <div class="panel-heading"><div><h3>Before & after preview</h3><p>Changes are calculated from the original uploaded dataset</p></div><span class="issue-total" id="previewOps">—</span></div>
+        <div class="preview-stats"><div><span>Rows before</span><strong id="cbRows">—</strong></div><div><span>Rows after</span><strong id="caRows">—</strong></div><div><span>Missing before</span><strong id="cbMissing">—</strong></div><div><span>Missing after</span><strong id="caMissing">—</strong></div><div><span>Duplicates before</span><strong id="cbDup">—</strong></div><div><span>Duplicates after</span><strong id="caDup">—</strong></div></div>
+        <div class="table-wrap"><table class="preview-table" id="cleaningPreviewTable"></table></div>
+      </section>
+      {% if session.get('cleaning_output_path') %}<section class="cleaned-download"><div><strong>Cleaned dataset ready</strong><span>{{ session.get('cleaning_output_rows') }} rows · Original upload preserved</span></div><a class="button button-primary" href="/cleaning/download">Download cleaned CSV</a></section>{% endif %}
+      <section class="panel cleaning-original" id="interactiveWorkspace">
+        <div class="panel-heading"><div><h3>Interactive data table</h3><p>Search, sort, inspect columns, and double-click a cell to edit it</p></div><span class="issue-total" id="tableCount">{{ rows }} records</span></div>
+        <div class="table-toolbar">
+          <input id="tableSearch" type="search" placeholder="Search all columns..." aria-label="Search dataset">
+          <select id="tableSortColumn" aria-label="Sort by column"><option value="">Sort by column…</option>{% for col in columns %}<option value="{{ col }}">{{ col }}</option>{% endfor %}</select>
+          <select id="tableSortDirection" aria-label="Sort direction"><option value="asc">Ascending</option><option value="desc">Descending</option></select>
+          <button class="button button-outline" type="button" id="undoCellEdit">Undo edit</button>
+          <button class="button button-outline" type="button" id="resetTableEdits">Reset edits</button>
+          <a class="button button-outline" href="/cleaning/export">Export working CSV</a>
+        </div>
+        <div class="column-profile" id="columnProfile"><span>Select a column header to view its profile.</span></div>
+        <div class="table-wrap interactive-table-wrap"><table class="preview-table interactive-table" id="interactiveDataTable"></table></div>
+        <div class="table-selection-toolbar"><label><input type="checkbox" id="selectPageRows"> Select page</label><span id="selectedRowsCount">0 rows selected</span><button class="button button-outline" type="button" id="exportSelectedRows">Export selected</button></div>
+        <div class="table-pagination"><span id="tablePageInfo">Loading records…</span><div><button class="button button-outline" id="tablePrev" type="button">← Previous</button><button class="button button-outline" id="tableNext" type="button">Next →</button></div></div>
+        <p class="table-hint">Edits are kept in a separate working copy. Reset returns to the original uploaded dataset.</p>
+      </section>
+      <section class="panel cleaning-original" id="columnCharts">
+        <div class="panel-heading"><div><h3>Column visualizations</h3><p>Quick distribution and summary for any column</p></div><select id="columnChartSelect" aria-label="Choose column to visualize"><option value="">Choose a column…</option>{% for col in columns %}<option value="{{ col }}">{{ col }}</option>{% endfor %}</select></div>
+        <div id="columnChartArea" class="column-chart-area"><span>Choose a column or click a table header to visualize its values.</span></div>
+      </section>
+      <section class="panel cleaning-original">
+        <div class="panel-heading"><div><h3>Original data preview</h3><p>First 10 rows from the uploaded dataset</p></div><span class="issue-total">{{ rows }} rows</span></div>
+        <div class="table-wrap"><table class="preview-table"><thead><tr>{% for col in columns %}<th>{{ col }}</th>{% endfor %}</tr></thead><tbody>{% for row in preview %}<tr>{% for col in columns %}<td>{{ row[col] }}</td>{% endfor %}</tr>{% endfor %}</tbody></table></div>
+      </section>
+    {% else %}
+      <section class="panel analysis-empty"><div class="empty-file">♧</div><h2>Upload a dataset to start cleaning</h2><p>Upload a CSV or Excel file from the dashboard to preview and apply cleaning operations.</p><a class="button button-primary" href="/">Upload a dataset</a></section>
+    {% endif %}
+    <footer class="footer"><span>DataQual Intelligence System</span><span>Clarity in every column.</span></footer>
+  </main>
+</div>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/cleaning.js') }}"></script>{% endblock %}

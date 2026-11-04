@@ -1,0 +1,6 @@
+customer_id,name,age,city,purchase_amount
+1,Aarav,24,Delhi,1200
+2,Meera,29,Mumbai,850
+3,Kabir,,Delhi,600
+4,Meera,29,Mumbai,850
+5,Anaya,150,Jaipur,-50

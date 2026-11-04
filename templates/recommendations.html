@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}AI Recommendations | DataQual{% endblock %}
+{% block content %}
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">DQ</div><div><strong>DataQual</strong><small>Intelligence System</small></div></div>
+    <div class="nav-label">WORKSPACE</div>
+    <a class="nav-item" href="/"><span class="nav-icon">▦</span> Overview</a>
+    <a class="nav-item" href="/#uploadTrigger"><span class="nav-icon">⇧</span> Upload Dataset</a>
+    <a class="nav-item" href="/analysis"><span class="nav-icon">⌕</span> Data Analysis</a>
+    <a class="nav-item" href="/business-insights"><span class="nav-icon">↗</span> Business Insights</a>
+    <a class="nav-item active" href="/recommendations"><span class="nav-icon">✦</span> AI Recommendations</a>
+    <a class="nav-item" href="/cleaning"><span class="nav-icon">♧</span> Data Cleaning</a>
+    <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">?</div><strong>Need a hand?</strong><p>Review suggestions before changing your data.</p><button class="button button-light help-guide-trigger" type="button">View guide</button></div><div class="profile"><div class="avatar">VS</div><div><strong>Workspace</strong><small>Data Analyst</small></div><span class="profile-dots">•••</span></div></div>
+  </aside>
+  <main class="main-content">
+    <header class="topbar"><div class="breadcrumb"><a href="/">Workspace</a> <span>/</span> AI Recommendations</div><div class="topbar-actions"><div class="top-avatar">VS</div></div></header>
+    <section class="page-heading"><div><p class="eyebrow">DATA QUALITY WORKSPACE</p><h1>AI recommendations<span class="heading-dot">.</span></h1><p class="subheading">Review suggested fixes, preview changes, and export a cleaned copy.</p></div><a class="button button-primary" href="/analysis">← Data Analysis</a></section>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}<div class="recommendation-flashes">{% for category,message in messages %}<div class="flash flash-{{ category }}">{{ message }}</div>{% endfor %}</div>{% endif %}
+    {% endwith %}
+    {% if has_dataset %}
+      <section class="analysis-summary"><div><span class="summary-label">CURRENT DATASET</span><strong>{{ filename }}</strong><small>{{ rows }} rows · recommendations generated from detected patterns</small></div><div class="analysis-score"><span>SUGGESTIONS</span><strong>{{ recommendations|length }}</strong></div></section>
+      <section class="recommendation-note"><strong>Review before applying</strong><span>These are local, rule-based recommendations. Your original dataset is never overwritten. Outliers and invalid values are marked for manual review when a safe automatic correction cannot be inferred.</span></section>
+      {% if recommendations %}
+      <form id="recommendationForm" method="post" action="/recommendations/apply">
+        <section class="recommendation-list">
+          <div class="panel-heading"><div><h3>Suggested improvements</h3><p>Select the changes you want to apply</p></div><span class="issue-total">{{ recommendations|length }} suggestions</span></div>
+          {% for rec in recommendations %}
+          <label class="recommendation-card">
+            <input type="checkbox" name="recommendations" value="{{ rec.id }}">
+            <div class="recommendation-content">
+              <div class="recommendation-meta"><span class="recommendation-kind">{{ rec.kind }}</span><span class="priority priority-{{ rec.priority|lower }}">{{ rec.priority }} priority</span><span class="recommendation-impact">{{ rec.impact }}</span></div>
+              <strong>{{ rec.title }}</strong><p>{{ rec.description }}</p>
+            </div>
+          </label>
+          {% endfor %}
+        </section>
+        <div class="recommendation-actions">
+          <button class="button button-outline" type="button" id="previewFixes">Preview selected fixes</button>
+          <button class="button button-primary" type="submit">Apply selected fixes</button>
+        </div>
+      </form>
+      <section class="panel preview-panel" id="previewPanel" hidden>
+        <div class="panel-heading"><div><h3>Change preview</h3><p>Sample of the proposed cleaned data</p></div><span class="issue-total" id="previewSelection">—</span></div>
+        <div class="preview-stats"><div><span>Rows before</span><strong id="rowsBefore">—</strong></div><div><span>Rows after</span><strong id="rowsAfter">—</strong></div><div><span>Missing cells before</span><strong id="missingBefore">—</strong></div><div><span>Missing cells after</span><strong id="missingAfter">—</strong></div></div>
+        <div class="table-wrap"><table class="preview-table" id="previewTable"></table></div>
+      </section>
+      {% else %}
+      <section class="panel analysis-empty"><div class="empty-file">✦</div><h2>No automatic fixes suggested</h2><p>No missing values, duplicate records, or safe consistency corrections were identified. Review validity and anomalies on the Data Analysis page.</p><a class="button button-outline" href="/analysis">Review findings</a></section>
+      {% endif %}
+      {% if cleaned_ready %}<section class="cleaned-download"><div><strong>Cleaned copy is ready</strong><span>Your original dataset remains unchanged.</span></div><a class="button button-primary" href="/recommendations/download">Download cleaned CSV</a></section>{% endif %}
+    {% else %}
+      <section class="panel analysis-empty"><div class="empty-file">✦</div><h2>Upload a dataset to get recommendations</h2><p>Upload a CSV or Excel file from the dashboard first. DataQual will suggest safe fixes based on the detected data quality issues.</p><a class="button button-primary" href="/">Upload a dataset</a></section>
+    {% endif %}
+    <footer class="footer"><span>DataQual Intelligence System</span><span>Clarity in every column.</span></footer>
+  </main>
+</div>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/recommendations.js') }}"></script>{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Business Insights | DataQual{% endblock %}
+{% block content %}
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">DQ</div><div><strong>DataQual</strong><small>Intelligence System</small></div></div>
+    <div class="nav-label">WORKSPACE</div>
+    <a class="nav-item" href="/"><span class="nav-icon">▦</span> Overview</a>
+    <a class="nav-item" href="/#uploadTrigger"><span class="nav-icon">⇧</span> Upload Dataset</a>
+    <a class="nav-item" href="/analysis"><span class="nav-icon">⌕</span> Data Analysis</a>
+    <a class="nav-item active" href="/business-insights"><span class="nav-icon">↗</span> Business Insights</a>
+    <a class="nav-item" href="/recommendations"><span class="nav-icon">✦</span> AI Recommendations</a>
+    <a class="nav-item" href="/cleaning"><span class="nav-icon">♧</span> Data Cleaning</a>
+    <div class="sidebar-bottom"><div class="help-card"><div class="help-icon">?</div><strong>Need a hand?</strong><p>Explore what your dataset reveals about business performance.</p><button class="button button-light help-guide-trigger" type="button">View guide</button></div><div class="profile"><div class="avatar">VS</div><div><strong>Workspace</strong><small>Data Analyst</small></div><span class="profile-dots">•••</span></div></div>
+  </aside>
+  <main class="main-content">
+    <header class="topbar"><div class="breadcrumb"><a href="/">Workspace</a> <span>/</span> Business Insights</div><div class="topbar-actions"><div class="top-avatar">VS</div></div></header>
+    <section class="page-heading"><div><p class="eyebrow">DATA INTELLIGENCE WORKSPACE</p><h1>Business insights<span class="heading-dot">.</span></h1><p class="subheading">Understand performance, patterns, and opportunities hidden in your dataset.</p></div><a class="button button-primary" href="/analysis">← Data Analysis</a></section>
+    {% if has_dataset %}
+      <section class="analysis-summary"><div><span class="summary-label">CURRENT DATASET</span><strong>{{ filename }}</strong><small>{{ rows }} rows · {{ columns }} columns</small></div><div class="analysis-score"><span>REPORT</span><strong>{{ business_insights|length }}<small> insights</small></strong></div></section>
+      <section class="panel insights-panel business-insights-panel">
+        <div class="panel-heading"><div><h3>Business insights & recommendations</h3><p>Findings are calculated from detected revenue, product, customer, location, rating, and date fields.</p></div><span class="issue-total">Data-driven report</span></div>
+        <div class="insights-report-grid">
+          <div class="insights-report-column"><h4><span>✦</span> Business insights</h4>
+            {% for item in business_insights %}<article class="insight-item"><strong>{{ item.title }}</strong><p>{{ item.text }}</p></article>{% else %}<p class="muted">No business metrics could be inferred from this dataset. Descriptive column names and relevant numeric, category, customer, or date fields help unlock more insights.</p>{% endfor %}
+          </div>
+          <div class="insights-report-column recommendations-column"><h4><span>↗</span> Recommendations</h4>
+            {% for item in business_recommendations %}<article class="insight-item recommendation-item"><strong>{{ item.title }}</strong><p>{{ item.text }}</p></article>{% else %}<p class="muted">Recommendations will appear when the dataset contains patterns that can support them.</p>{% endfor %}
+          </div>
+        </div>
+        <p class="muted insights-disclaimer">Metrics are calculated from detected columns and available records. Confirm field meanings and business context before making decisions. Correlation does not imply causation.</p>
+      </section>
+    {% else %}
+      <section class="panel analysis-empty"><div class="empty-file">↗</div><h2>Upload a dataset to explore business insights</h2><p>Upload a CSV or Excel file from the dashboard first. DataQual will generate findings from relevant fields in your dataset.</p><a class="button button-primary" href="/">Upload a dataset</a></section>
+    {% endif %}
+    <footer class="footer"><span>DataQual Intelligence System</span><span>Clarity in every column.</span></footer>
+  </main>
+</div>
+{% endblock %}
