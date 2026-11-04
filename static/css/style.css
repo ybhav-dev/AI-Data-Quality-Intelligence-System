@@ -240,5 +240,5 @@
 .insights-panel{margin-bottom:18px}.insights-report-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding-top:12px}.insights-report-column{border:1px solid var(--border);border-radius:10px;padding:16px;background:#fff}.insights-report-column h4{margin:0 0 12px;font:700 13px Manrope,sans-serif;color:var(--ink)}.insights-report-column h4 span{color:var(--cherry);margin-right:6px}.insight-item{padding:11px 0;border-bottom:1px solid #f0e8e3}.insight-item:last-child{border-bottom:0}.insight-item strong{font-size:12px;color:var(--ink)}.insight-item p{font-size:11px;line-height:1.65;color:var(--muted);margin:5px 0 0}.recommendation-item{border-left:2px solid #1a51c7;padding-left:12px}.insights-disclaimer{font-size:10px;margin:12px 0 0;line-height:1.6}
 @media(max-width:760px){.insights-report-grid{grid-template-columns:1fr}}
 
-/* Business Insights page: separate the dataset summary from the report */
-.business-insights-panel{margin-top:24px}
+/* Business Insights layout: separate report from dataset summary */
+.business-insights-panel{margin-top:22px}

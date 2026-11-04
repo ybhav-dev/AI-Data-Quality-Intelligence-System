@@ -50,17 +50,6 @@
       <p class="muted correlation-note">Strong positive values move together; strong negative values move in opposite directions. Correlation does not imply causation.</p>
     </section>
     {% endif %}
-    <section class="panel insights-panel">
-      <div class="panel-heading"><div><h3>Data quality insights & recommendations</h3><p>Statistical checks highlighting completeness and potential data issues.</p></div><span class="issue-total">Quality report</span></div>
-      <div class="insights-report-grid">
-        <div class="insights-report-column"><h4><span>✦</span> Quality findings</h4>
-          {% for item in insights %}<article class="insight-item"><strong>{{ item.title }}</strong><p>{{ item.text }}</p></article>{% endfor %}
-        </div>
-        <div class="insights-report-column recommendations-column"><h4><span>↗</span> Quality actions</h4>
-          {% for item in recommendations %}<article class="insight-item recommendation-item"><strong>{{ item.title }}</strong><p>{{ item.text }}</p></article>{% endfor %}
-        </div>
-      </div>
-    </section>
     <section class="panel custom-rules-panel">
       <div class="panel-heading"><div><h3>Custom validation rules</h3><p>Define checks for your dataset and run them without changing the source data.</p></div><span class="issue-total">Rule builder</span></div>
       <div class="rule-builder" id="ruleBuilder">
